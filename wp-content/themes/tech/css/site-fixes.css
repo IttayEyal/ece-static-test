@@ -1,0 +1,15 @@
+/* Fixes for layout bugs found on the live site (see SITE_ISSUES.md). */
+
+/* Faculty directory: a long unbroken string (URL) in one member's details made
+   the whole page ~1,900px wide. Let flex children shrink and wrap long words. */
+.phonebook-members-item-details-wrap,
+.phonebook-member-description,
+.phonebook-member-website { min-width: 0; overflow-wrap: anywhere; }
+
+/* Grad-student (doctorant) pages use an unstyled default template: no
+   container, and the headshot filled the whole window (1000-2000px wide).
+   Give them a page container and a portrait-sized photo. */
+body.single-doctorant #primary { max-width: 1140px; margin: 0 auto; padding: 32px 16px 48px; }
+body.single-doctorant .entry-title { margin-bottom: 16px; }
+body.single-doctorant .post-thumbnail img { display: block; width: 280px; max-width: 100%; height: auto; border-radius: 8px; }
+body.single-doctorant .post-navigation .nav-links { display: flex; justify-content: space-between; gap: 16px; margin-top: 32px; }

@@ -1,0 +1,1202 @@
+//// Archive Subject Event
+
+$(document).ready(function () {
+
+    if($('#staff-members-area').length){
+        $('.p-area-button').click(function(){
+            $(this).addClass('is-checked');
+            $('.p-area-button').not($(this)).removeClass('is-checked');
+            if($(this).hasClass('btn-all')){
+                $('.p-area-member-item').show();
+            } else {
+                let pickedArea = $(this).attr('data-filter-area');
+                $('.p-area-member-item.'+pickedArea).show();
+                $('.p-area-member-item').not('.'+pickedArea).hide();
+            }
+        })
+    };
+
+    if($('#events-by-subject').length){
+
+
+$('.selected-input-group').click(function () {
+    $(this).next('.button-group-dd').toggleClass('bs-none hide');
+});
+
+        // external js: isotope.pkgd.js
+
+
+        // store filter for each group
+        var buttonFilters = {};
+        var buttonFilter;
+        // quick search regex
+        var qsRegex;
+
+        // init Isotope
+        var $grid = $('.grid').isotope({
+            // set to a selector string
+// first matching element within container element will be used
+            masonry: {
+                columnWidth: '.grid-sizer'
+            },
+
+
+            originLeft: false,
+
+            itemSelector: '.cat-event-item',
+            filter: function () {
+                var $this = $(this);
+                var searchResult = qsRegex ? $this.text().match(qsRegex) : true;
+                var buttonResult = buttonFilter ? $this.is(buttonFilter) : true;
+                return searchResult && buttonResult;
+            },
+        });
+
+
+
+        $('#events-cat-filters').on('click', '#cat-event-search-clear-btn', function () {
+
+                 $('#expressions-quicksearch-input').val('');
+                 qsRegex = new RegExp('');
+                $('#events-quicksearch').addClass('no-value');
+
+            $grid.isotope();
+        });
+
+
+        $('#events-cat-filters').on('click', '.button', function () {
+            // $('.expressions-quicksearch').val('');
+            // qsRegex = new RegExp('');
+
+
+               //  if($(this).attr('id') == 'cat-event-search-clear-btn'){
+               //      $('#expressions-quicksearch-input').val('');
+               //      qsRegex = new RegExp('');
+               //     $('#events-quicksearch').addClass('no-value');
+               // //      console.log($(this).attr('id'));
+               //      $grid.isotope();
+               //  }
+
+
+
+            var $this = $(this);
+            // get group key
+            var $buttonGroup = $this.parents('.button-group');
+            var filterGroup = $buttonGroup.attr('data-filter-group');
+            // set filter for group
+            buttonFilters[filterGroup] = $this.attr('data-filter');
+            // combine filters
+            buttonFilter = concatValues(buttonFilters);
+            // Isotope arrange
+            $grid.isotope();
+
+            $("#all-events-wrap").scrollTop(0)
+        });
+
+        // use value of search field to filter
+        var $quicksearch = $('.expressions-quicksearch').keyup(debounce(function () {
+
+
+            if($('#expressions-quicksearch-input').val().length) {
+                // alert(1);
+                $('#events-quicksearch').removeClass('no-value');
+            } else {
+                $('#events-quicksearch').addClass('no-value');
+            }
+
+
+
+            qsRegex = new RegExp($quicksearch.val(), 'gi');
+            $grid.isotope();
+        }));
+
+        // change is-checked class on buttons
+        $('.button-group').each(function (i, buttonGroup) {
+            var $buttonGroup = $(buttonGroup);
+            $buttonGroup.on('click', 'button', function () {
+                $buttonGroup.find('.is-checked').removeClass('is-checked');
+                $(this).addClass('is-checked');
+                $(this).parents('.button-group-dd').addClass('bs-none hide');
+                $(this).parents('.input-group-dd').find('.selected-input-group').text($(this).text());
+             //   console.log($(this).text())
+            });
+        });
+
+        // flatten object by concatting values
+        function concatValues(obj) {
+            var value = '';
+            for (var prop in obj) {
+                value += obj[prop];
+            }
+            return value;
+        }
+
+        // debounce so filtering doesn't happen every millisecond
+        function debounce(fn, threshold) {
+            var timeout;
+            threshold = threshold || 100;
+            return function debounced() {
+                clearTimeout(timeout);
+                var args = arguments;
+                var _this = this;
+
+                function delayed() {
+                    fn.apply(_this, args);
+                }
+
+                timeout = setTimeout(delayed, threshold);
+            };
+        }
+
+    };
+
+});
+
+
+
+
+
+
+
+// Fix Youtube thumb
+
+$(document).ready(function() {
+
+    function checkExists(imageUrl, callback) {
+        var img = new Image();
+        img.onerror = function() {
+            callback(false);
+        };
+        img.onload = function() {
+            //check for a default (grey) image
+            if (this.width == 120) {
+                callback(false);
+            }else {
+                callback(true);
+            }
+        };
+        img.src = imageUrl;
+    }
+
+//	const changeTo = 'mqdefault';
+    const changeTo = 'mq3';
+
+    $('.ty-thumb-wrap-img').each( function(){
+        let currentIMG = $(this);
+
+        let currentSrcAttr = $(currentIMG).attr('data-lazy-src');
+        let urlToCheck;
+// attribute exists?
+        if (typeof currentSrcAttr !== 'undefined' && currentSrcAttr !== false) {
+            urlToCheck = $(currentIMG).attr('data-lazy-src');
+        } else {
+            urlToCheck = $(currentIMG).attr('data-yt-src');
+        }
+
+
+        //  let urlToCheck = $(currentIMG).attr('data-yt-src');
+       // let urlToCheck = $(currentIMG).attr('data-lazy-src');
+        let urlFix;
+        checkExists(urlToCheck, function(exists) {
+        //    console.log('Fake exists? ' + exists);
+            if(exists == false){
+                urlFix = urlToCheck.replace('maxresdefault', changeTo);
+              //  console.log(urlFix)
+                $(currentIMG).attr('src',urlFix).attr('data-lazy-src',urlFix);
+                $(currentIMG).addClass('ty-loaded');
+             //     console.log('replace '+urlToCheck);
+            }
+        });
+    })
+});
+
+
+
+
+
+
+$(document).ready(function () {
+
+
+    $(document).on('click', 'a.ra-anchor[href^="#"]', function (event) {
+        event.preventDefault();
+
+        $('html, body').animate({
+            scrollTop: $($.attr(this, 'href')).offset().top - 200
+        }, 500);
+    });
+
+
+    /**
+     * Ninja Forms Error Handling
+     * .field-wrap contains error class "nf-error"
+     * find first field with error and put focus on it
+     */
+   // jQuery(document).on('nfFormReady', function(e, layoutView){
+        $(document).on( 'nfFormReady', function( e, layoutView ) {
+        var extendErrorAccessibility = Marionette.Object.extend({
+            initialize: function() {
+                this.listenTo( nfRadio.channel("form-"+layoutView.model.get("id")), 'submit:failed', this.errorHandler );
+            },
+            errorHandler: function( model ) {
+                // Find first error and put focus on it
+                // $('.field-wrap.nf-error').first().find('.ninja-forms-field').focus();
+                let firstErrorInput = $('.field-wrap.nf-error').first().find('.ninja-forms-field');
+              //  $(firstErrorInput).focus();
+
+                $('html, body').animate({
+                    scrollTop: $(firstErrorInput).focus().offset().top - 250
+                }, 1000);
+            }
+        });
+
+        new extendErrorAccessibility();
+    });
+
+
+    $( document ).on( 'nfFormSubmitResponse', function() {
+        //Do Stuff
+   //     console.log (1);
+        $('.cf-page-title').addClass('hidden');
+        $('.cf-page-instructions').addClass('hidden');
+
+        let SuccessMessage = $('.nf-response-msg');
+
+        $('html, body').animate({
+            scrollTop: $(SuccessMessage).focus().offset().top - 250
+        }, 1000);
+
+
+    });
+
+
+//
+//     $(document).on( 'nfFormReady', function( e, layoutView ) {
+//
+// //      //   $('form').on('focus focusout keyup submit', 'input', function() {
+// //
+// //             $('.submit-wrap').on('click', 'input', function() {
+// //           //  $('#nf-error-7 .nf-error-required-error').text('New Required Error Message');
+// // // alert(1);
+// //       //  $('.nf-error').first().closest('.nf-field').next('.nf-after-field').find('.nf-error-msg').focus();
+// //               //  $('.nf-error').filter(":first").find('input').addClass('test');
+// //                 $('.nf-error').eq(0).find('input').addClass('test');
+// //         });
+//
+//
+//         $('.submit-wrap').click(function(event) {
+//             event.preventDefault();
+//             event.stopPropagation();
+//               console.log("test")
+//             var errorElements = document.querySelectorAll(".nf-error input");
+//             for (let index = 0; index < errorElements.length; index++) {
+//                 const element = errorElements[index];
+//                 //  console.log(element);
+//                 $('html, body').animate({
+//                     scrollTop: $(errorElements[0]).focus().offset().top - 250
+//                 }, 1000);
+//                 return false;
+//             }
+//         });
+//
+//
+//     });
+
+
+
+
+
+
+    // Site menu accessibility
+    $('.sub-menu .menu-item a').focus(function() {
+    //  alert( "Handler for .focus() called." );
+        let currentHovered = $(this).closest('.menu-item-has-children');
+      //  $(this).closest('.menu-item-has-children').addClass('hovered');
+        $(currentHovered).addClass('hovered');
+        $('.menu-item-has-children').not(currentHovered).removeClass('hovered');
+
+    });
+
+    $('.sub-menu .menu-item:last-child a').blur(function() {
+        $(this).closest('.menu-item-has-children').removeClass('hovered');
+
+    });
+
+    $('.sub-menu .menu-item:first-child a').blur(function() {
+        $(this).closest('.menu-item-has-children').removeClass('hovered');
+
+    });
+
+
+
+    // Sticky Header
+
+    window.onscroll = function () {
+        stickFunction()
+    };
+    var header = document.getElementById("masthead");
+    var sticky = header ? header.offsetTop : 0;
+
+    function stickFunction() { if (!header) return;
+        if (window.pageYOffset > sticky) {
+            header.classList.add("sticky");
+            $('body').addClass('body-scrolled');
+        } else {
+            header.classList.remove("sticky");
+            $('body').removeClass('body-scrolled');
+        }
+    }
+
+    async function updateSearchField() {
+
+        let currentSearchTerm = $('#search-term-inner').text();
+        $('.search-term-hidden').each(function (index) {
+            if ($(this).text() != currentSearchTerm) {
+                $('#search-term-inner').text($(this).text());
+                $('#search-page-input').val($(this).text());
+            }
+        });
+        return;
+    }
+
+    async function removeAjaxFields() {
+        await updateSearchField();
+
+        if ($('.results-count-wrap.on').length >= 1) {
+            $('.results-count-wrap').not('.on').remove();
+        } else {
+            $('.results-count-wrap').addClass('on');
+        }
+
+        if ($('.search-term-hidden.on').length >= 1) {
+            $('.search-term-hidden').not('.on').remove();
+        } else {
+            $('.search-term-hidden').addClass('on');
+        }
+    };
+
+    updateSearchField();
+    removeAjaxFields();
+
+    function checkSearchRes() {
+        if ($('.search-results-item').length) {
+            // console.log('has results');
+            $('#no-results-wrapper').remove();
+        } else {
+            // console.log('no results');
+            if ($('#no-results-wrapper.no-search-rslts').length) {
+                $('.no-results-cont').not('.no-search-rslts').remove();
+            }
+        }
+    }
+
+    checkSearchRes();
+
+    $(document).on("sf:ajaxstart", ".searchandfilter", function () {
+        currentSearchTerm = $('.search-term-hidden').text();
+        if ($('#no-results-wrapper').length) {
+            $('#no-results-wrapper').addClass('no-search-rslts');
+        }
+    });
+
+    $(document).on("sf:ajaxfinish", ".searchandfilter", function () {
+        checkSearchRes();
+        updateSearchField();
+        removeAjaxFields();
+    });
+});
+
+
+$(document).ready(function () {
+
+    function sidenavMenuItem(winWidthLg) {
+        if (winWidthLg.matches) { // If media query matches
+            $("#sidnav-menu .menu-item.menu-item-has-children").on("click", "a", function (e) {
+                if ($(this).parents('li.menu-item.menu-item-has-children').hasClass('sub-open focus')) {
+                } else {
+                    e.preventDefault();
+
+                    $(this).parent('li.menu-item.menu-item-has-children').addClass('sub-open focus a-clicked');
+                    setTimeout(function () {
+                        $('.a-clicked').removeClass('a-clicked');
+                    }, 200);
+                }
+            });
+        }
+    }
+
+    function parentMenuItem(winWidthMd) {
+        if (winWidthMd.matches) { // If media query matches
+            $("#tech-main .menu-item.menu-item-has-children").on("click", "a", function (e) {
+                if ($(this).parents('li.menu-item.menu-item-has-children').hasClass('sub-open focus')) {
+                } else {
+                    e.preventDefault();
+                    $(this).parent('li.menu-item.menu-item-has-children').addClass('sub-open focus a-clicked');
+                    setTimeout(function () {
+                        $('.a-clicked').removeClass('a-clicked');
+                    }, 200);
+                }
+            });
+
+
+            $("#tech-main .menu-item.menu-item-has-children").click(function () {
+                if ($(this).hasClass('sub-open focus a-clicked')) {
+
+                } else if ($(this).hasClass('sub-open focus')) {
+                    // $(this).removeClass('sub-open focus').blur().find('a').blur();
+                    $(this).removeClass('sub-open focus');
+                    //    alert('li');
+                } else {
+                    $(this).addClass('sub-open focus');
+                    //     alert('li');
+                }
+
+            });
+
+            //Mobile Search
+
+            $('#header-site-search-btn').click(function () {
+                $('#sidenav-mobile-overlay').addClass('overlay');
+                $('header#masthead').addClass('header-search-open');
+                $('body').addClass('scroll-lock');
+            });
+
+
+            $('#site-search-mobile-close').on('click', function (e) {
+                e.preventDefault();
+                //   $('html, body').animate({scrollTop:0}, '300');
+                $('form#header-site-search-form').removeClass('open');
+                $('#sidnav-menu').removeClass('side-menu-open');
+                $('header#masthead').removeClass('header-search-open');
+                $('body').removeClass('scroll-lock');
+                $('#sidenav-mobile-overlay').removeClass('overlay');
+                $('#header-site-search-btn').removeClass('search');
+            });
+
+
+        } else {
+
+
+        }
+
+
+    };
+
+
+    var winWidthMd = window.matchMedia("(max-width: 992px)")
+    var winWidthLg = window.matchMedia("(max-width: 1200px)")
+
+    parentMenuItem(winWidthMd) // Call listener function at run time
+    winWidthMd.addEventListener('change', parentMenuItem);
+    sidenavMenuItem(winWidthLg)
+    winWidthLg.addEventListener('change', sidenavMenuItem);
+
+    function headerSearchVal() {
+
+        let siteSearchForm = $('#header-site-search').find('.searchandfilter');
+        var newSearchTerm = $('#header-site-search-input').val();
+        var currentSearchTerm = $('#header-site-search .sf-field-search').find('input').val();
+        if (newSearchTerm != currentSearchTerm) {
+            $('#header-site-search .sf-field-search').find('input').val(newSearchTerm);
+            $(siteSearchForm).submit();
+        }
+    }
+
+
+    function siteSearchVal() {
+        let siteSearchForm = $('#header-site-search').find('.searchandfilter');
+        var newSearchTerm = $('input#search-page-input').val();
+        var currentSearchTerm = $('#header-site-search .sf-field-search').find('input').val();
+        if (newSearchTerm != currentSearchTerm) {
+            $('#header-site-search .sf-field-search').find('input').val(newSearchTerm);
+            $(siteSearchForm).submit();
+        }
+    }
+
+    $('#header-site-search-input').keypress(function (evt) {
+        if (evt.keyCode == 13 && $(this).val()) {
+            evt.preventDefault();
+            headerSearchVal();
+        }
+    });
+
+    $('#header-site-search-btn').click(function (evt) {
+        evt.preventDefault();
+
+        if ($(this).hasClass('search') && $('input#header-site-search-input').val()) {
+            headerSearchVal();
+        } else if ($(this).hasClass('search')) {
+            $('form#header-site-search-form').removeClass('open');
+            $(this).removeClass('search');
+            $('#sidenav-mobile-overlay').removeClass('overlay');
+            $('header#masthead').removeClass('header-search-open');
+            $('body').removeClass('scroll-lock');
+        } else {
+            $('form#header-site-search-form').addClass('open');
+            $(this).addClass('search');
+        }
+    });
+
+    $('#search-page-btn').click(function (evt) {
+        evt.preventDefault();
+        if ($('input#search-page-input').val()) {
+            siteSearchVal();
+        }
+    });
+
+    $('#footer-top-btn').on('click', function (e) {
+        e.preventDefault();
+        $('html, body').animate({scrollTop: 0}, '300');
+    });
+
+    $('#sidenav-menu-btn').on('click', function (e) {
+        e.preventDefault();
+        $('#sidnav-menu').addClass('side-menu-open');
+        $('#sidenav-mobile-overlay').addClass('overlay');
+        $('body').addClass('scroll-lock');
+        $('header#masthead').addClass('header-search-open');
+    });
+
+    $('#sidenav-menu-close').on('click', function (e) {
+        e.preventDefault();
+        $('#sidnav-menu').removeClass('side-menu-open');
+        $('#sidenav-mobile-overlay').removeClass('overlay');
+        $('body').removeClass('scroll-lock');
+        $('header#masthead').removeClass('header-search-open');
+        $('.menu-item').removeClass('sub-open focus');
+    });
+
+    $('#sidenav-mobile-overlay').on('click', function () {
+        if ($('form#header-site-search-form').hasClass('open')) {
+            $('form#header-site-search-form').removeClass('open');
+            $('#header-site-search-btn').removeClass('search');
+        }
+        if ($('#sidnav-menu').hasClass('side-menu-open')) {
+            $('#sidnav-menu').removeClass('side-menu-open');
+            $('.menu-item').removeClass('sub-open focus');
+        }
+        $(this).removeClass('overlay');
+        $('body').removeClass('scroll-lock');
+        $('header#masthead').removeClass('header-search-open');
+    });
+});
+
+$(document).on("sf:ajaxstart", ".searchandfilter", function () {
+
+    $('.mim-results-wrapper').LoadingOverlay("show", {
+        imageColor: "#3878AC",
+        background: "rgba(255, 255, 255, 0.6)",
+        //  custom      : customElement
+        // image:"<?php echo get_stylesheet_directory_uri();?>/images/loader.svg",
+        size: 60,
+        minSize: 60,
+        maxSize: 60
+    });
+
+    if (!$('.mim-results-wrapper').find('.archive-item-link').length) {
+        if ($('.mim-results-wrapper').find('.no-results').length) {
+            $('.no-results').addClass('nr-wrap');
+        }
+    }
+});
+
+
+$(document).on("sf:ajaxfinish", ".searchandfilter", function () {
+
+    $('.mim-results-wrapper').LoadingOverlay("hide");
+
+    if (!$('.mim-results-wrapper').find('.archive-item-link').length) {
+        if ($('.mim-results-wrapper').find('.no-results.nr-wrap').length) {
+            $('.no-results').not('.nr-wrap').remove();
+        } else {
+            $('.no-results').addClass('nr-wrap');
+        }
+    } else {
+        $('.no-results').remove();
+    }
+});
+
+$(document).ready(function () {
+
+    function altSearchVal() {
+        let currentSearchForm = $('#search-rsrc-input').parents('.snf-filters-cont').find('.searchandfilter');
+        var newSearchTerm = $('#search-rsrc-input').val();
+        var currentSearchTerm = $('.sf-field-search').find('input').val();
+        if (newSearchTerm != currentSearchTerm) {
+            $('.sf-field-search').find('input').val(newSearchTerm);
+            $(currentSearchForm).submit();
+        }
+    }
+
+    $('#archive-search-input').submit(function (evt) {
+        evt.preventDefault();
+        altSearchVal();
+    });
+
+    $('#search-rsrc-btn').click(function () {
+        altSearchVal();
+    });
+
+    $('#search-clear-btn').click(function (evt) {
+        evt.preventDefault();
+        $('#search-rsrc-input').val('');
+        altSearchVal();
+    });
+
+    $("#phone-book-wrapper #no-results-wrapper").on("click", "#nr-search-clear-btn", function (evt) {
+        evt.preventDefault();
+        $('#search-rsrc-input').val('');
+        altSearchVal();
+    });
+
+    function updateAltSearchInput() {
+        var currentSearchTerm = $('.sf-field-search').find('input').val();
+        $('#search-rsrc-input').val(currentSearchTerm);
+    }
+    updateAltSearchInput();
+
+    function checkInputVal() {
+        if ($('#search-rsrc-input').val()) {
+            // alert('has');
+            $('#search-clear-btn').removeClass('off');
+        } else {
+            $('#search-clear-btn').addClass('off');
+        }
+    }
+
+    if ($('#technical-reports-filters').length) {
+
+        var winWidthTrMid = window.matchMedia('(min-width:1200px) and (max-width: 1400px)');
+        var winWidthTrSm = window.matchMedia('(max-width: 880px)');
+
+        function techReportsCollapse(winWidthTrMid) {
+            if (winWidthTrMid.matches) { // If media query matches
+                $('.tech-report-btn').each(function () {
+                    $(this).addClass('collapsed').attr('aria-expanded', 'false');
+                    $(this).next('.collapse').removeClass('show');
+                });
+
+            } else {
+                if (!$('#technical-reports-wrapper').hasClass('collapse-am')) {
+                    $('.tech-report-btn').each(function () {
+                        $(this).removeClass('collapsed').attr('aria-expanded', 'true');
+                        $(this).next('.collapse').addClass('show');
+                    });
+                }
+            }
+        }
+
+        function techReportsCollapseSm(winWidthTrSm) {
+            if (winWidthTrSm.matches) { // If media query matches
+                $('.tech-report-btn').each(function () {
+                    $(this).addClass('collapsed').attr('aria-expanded', 'false');
+                    $(this).next('.collapse').removeClass('show');
+                    $('#technical-reports-wrapper').addClass('collapse-am');
+                });
+
+            } else {
+                if ($('#technical-reports-wrapper').hasClass('collapse-am')) {
+                    $('.tech-report-btn').each(function () {
+                        $(this).removeClass('collapsed').attr('aria-expanded', 'true');
+                        $(this).next('.collapse').addClass('show');
+                        $('#technical-reports-wrapper').removeClass('collapse-am');
+                    });
+                }
+            }
+        }
+
+        techReportsCollapse(winWidthTrMid);
+        winWidthTrMid.addEventListener('change', techReportsCollapse);
+
+        techReportsCollapseSm(winWidthTrSm);
+        winWidthTrSm.addEventListener('change', techReportsCollapseSm);
+
+        function sortToggle() {
+            $('.sorted-element').one("click", function () {
+
+                let dataToSort = $(this).attr('data-sort');
+
+                if ((dataToSort == 'title') && $('.sf-field-sort_order ul li.sf-option-active input').attr('value') == 'title+asc') {
+                    $('.sf-field-sort_order ul').find('input[value="title+desc"]').trigger('click');
+                } else if (dataToSort == 'title') {
+                    $('.sf-field-sort_order ul').find('input[value="title+asc"]').trigger('click');
+                }
+
+                if ((dataToSort == 'date') && $('.sf-field-sort_order ul li.sf-option-active input').attr('value') == '_sfm_publish_date+desc+date') {
+                    $('.sf-field-sort_order ul').find('input[value="_sfm_publish_date+asc+date"]').trigger('click');
+                } else if (dataToSort == 'date') {
+                    $('.sf-field-sort_order ul').find('input[value="_sfm_publish_date+desc+date"]').trigger('click');
+                }
+
+                if ((dataToSort == 'authors') && $('.sf-field-sort_order ul li.sf-option-active input').attr('value') == '_sfm_authors+asc+alpha') {
+                    $('.sf-field-sort_order ul').find('input[value="_sfm_authors+desc+alpha"]').trigger('click');
+                } else if (dataToSort == 'authors') {
+                    $('.sf-field-sort_order ul').find('input[value="_sfm_authors+asc+alpha"]').trigger('click');
+                }
+            });
+        };
+
+        function placeFoundNote() {
+            let foundNoteWrap = $('#results-count-wrap');
+            let altFoundNoteWrap = $('#results-found-wrap');
+            $('#results-found-wrap').html('');
+            $('#results-found-wrap').html($('#results-count-wrap').html());
+        }
+
+        placeFoundNote();
+        checkInputVal();
+        sortToggle();
+
+        $(document).on("sf:ajaxfinish", ".searchandfilter", function () {
+            checkInputVal();
+            sortToggle();
+            placeFoundNote();
+            techReportsCollapse(winWidthTrMid);
+            winWidthTrMid.addEventListener('change', techReportsCollapse);
+            techReportsCollapseSm(winWidthTrSm);
+            winWidthTrSm.addEventListener('change', techReportsCollapseSm);
+        });
+    };
+
+
+    $('.sf-field-search').attr('tabindex','-1');
+
+    if ($('#phone-book-filters').length || $('#sm-filter').length) {
+        // let allSelected = $(this).find('.sf-field-taxonomy-area .sf-option-active');
+        let allSelected = $(this).find('.sf-field-taxonomy-area ul').find('li').first();
+
+        let tabOnLoad = allSelected.next().find('input');
+
+        let mainTab = $('.sf-field-taxonomy-area li input[value="faculty-members"]');
+        let mainTabHe = $('.sf-field-taxonomy-area li input[value="faculty-members-he"]');
+        if (mainTab.length) {
+        } else if (mainTabHe.length) {
+            mainTab = mainTabHe;
+        } else {
+            mainTab = tabOnLoad;
+        }
+
+        $('.sf-field-taxonomy-area ul').attr('role','tablist').attr('aria-label','Tab filters');
+        $('.sf-field-taxonomy-area').find('li').not(allSelected).attr('tabindex','0').attr('role','tab');
+        $('.sf-field-sort_order').attr('tabindex','-1');
+        $(allSelected).attr('tabindex','-1');
+
+        if ($(allSelected).hasClass('sf-option-active')) {
+            $(allSelected).removeClass('sf-option-active').find('input').removeAttr('checked');
+            $(mainTab).trigger('click');
+            sortNamesToggle();
+        } else {
+            $('#phone-book-wrapper').addClass('shown');
+            if (!$('#phone-book-wrapper').find('.archive-phonebook-item-link').length) {
+                $('#phone-book-headings').addClass('hidden');
+            } else {
+                $('#phone-book-headings').removeClass('hidden');
+            }
+        }
+
+        function sortNamesToggle() {
+            $('.sorted-element').one("click", function () {
+
+                let dataToSort = $(this).attr('data-sort');
+
+                if ($('.sf-field-sort_order ul li:first').hasClass('sf-option-active') && dataToSort == 'title') {
+                    $('.sf-field-sort_order ul').find('input[value="title+desc"]').trigger('click');
+                } else if ($('.sf-field-sort_order ul li:first').hasClass('sf-option-active') && dataToSort == 'last-name') {
+                    $('#phone-book-filters').find('input[value="_sfm_sm_last_name+desc+alpha"]').trigger('click');
+                } else if ($('.sf-field-sort_order ul li:first').hasClass('sf-option-active') && dataToSort == 'location') {
+                    $('.sf-field-sort_order ul').find('input[value="_sfm_office__location+asc+alpha"]').trigger('click');
+                } else if ((dataToSort == 'location') && $('.sf-field-sort_order ul li.sf-option-active input').attr('value') == '_sfm_office__location+asc+alpha') {
+                    $('.sf-field-sort_order ul').find('input[value="_sfm_office__location+desc+alpha"]').trigger('click');
+                } else {
+                    $('.sf-field-sort_order ul li:first').find('input').trigger('click');
+                }
+            });
+        };
+
+        function emailOnBtn() {
+            $('.phonebook-btn').on('click', '.phonebook-email', function (e) {
+                e.stopPropagation();
+
+                // let emailToCopy = $(this).attr('data-email');
+                // var $temp = $("<input>");
+                // $("body").append($temp);
+                // $temp.val(emailToCopy).select();
+                // document.execCommand("copy");
+                // $temp.remove();
+                //
+                // let emailNote = 'email copied';
+                //
+                // if (document.dir == "rtl") {
+                //     emailNote = 'כתובת המייל הועתקה';
+                // }
+                //
+                // $(this).append('<div class="email-notification-box">' + emailNote + '</div>');
+                // $(this).find('.email-notification-box').fadeIn(300).delay(1500).fadeOut(400, function () {
+                //     $(this).remove();
+                // });
+            });
+        };
+
+        function emailMobile() {
+            $('.sm-mobile').on('click', '.phonebook-email', function (e) {
+             //   e.preventDefault();
+                e.stopPropagation();
+                // let emailToCopy = $(this).attr('data-email');
+                // var $temp = $("<input>");
+                // $("body").append($temp);
+                // $temp.val(emailToCopy).select();
+                // document.execCommand("copy");
+                // $temp.remove();
+                //
+                // $(this).append('<div class="email-notification-box">email copied</div>');
+                // $(this).find('.email-notification-box').fadeIn(300).delay(1500).fadeOut(400, function () {
+                //     $(this).remove();
+                // });
+            });
+        }
+
+
+        let jobTitle;
+        if (document.dir == "rtl") {
+            jobTitle = 'תפקיד';
+        } else {
+            jobTitle = 'Job';
+        }
+
+        function administrativeLayout() {
+            if ($('.sf-field-taxonomy-area input[value=administrative]').parents('li').hasClass('sf-option-active') || $('.sf-field-taxonomy-area input[value=administrative-he]').parents('li').hasClass('sf-option-active')) {
+                $('#phone-book-headings').addClass('administrative');
+                $('#phone-book-wrapper').addClass('administrative');
+                if (!$('#admin-job-title').length) {
+                    $('#phone-book-headings .sm-name').after('<span id="admin-job-title">' + jobTitle + '</span>');
+                }
+
+            } else {
+                $('#phone-book-headings').removeClass('administrative');
+                $('#phone-book-wrapper').removeClass('administrative');
+                $('#phone-book-headings #admin-job-title').remove();
+            }
+        }
+
+        emailOnBtn();
+        checkInputVal();
+        sortNamesToggle();
+        //administrativeLayout();
+        emailMobile();
+        
+        $(document).on("ajaxComplete", function () {
+            if($('body').hasClass('page-template-page-members-new')){
+                emailOnBtn();
+                checkInputVal();
+                sortNamesToggle();
+                //administrativeLayout();
+                emailMobile();
+            }
+        });
+
+        $(document).on("sf:ajaxfinish", ".searchandfilter", function () {
+            checkInputVal();
+            sortNamesToggle();
+            emailOnBtn();
+            //administrativeLayout();
+            emailMobile();
+
+            $('#phone-book-wrapper').addClass('shown');
+
+            if (!$('#phone-book-wrapper').find('.archive-phonebook-item-link').length) {
+                $('#phone-book-headings').addClass('hidden');
+            } else {
+                $('#phone-book-headings').removeClass('hidden');
+            }
+        });
+    }
+});
+
+
+// Sliders
+$(document).ready(function () {
+
+    let isRTL;
+    if (document.dir == "rtl") {
+        isRTL = true;
+    } else {
+        isRTL = false;
+    }
+
+    // -------- Related members modal
+    let biosLength = $(".team-grid").find(".team-item").length;
+    $("#bios-slick-pop").slick({
+        slidesToShow: 1,
+        dots: true,
+        appendDots: ".slick-nav",
+        arrows: true,
+        appendArrows: ".slick-nav",
+        slidesToScroll: 1,
+        infinite: false,
+        rows: 0,
+        responsive: [
+            {
+                breakpoint: 767,
+                settings: {
+                    dots: false,
+                }
+            },
+
+        ],
+        rtl: isRTL
+    });
+
+   // $(".team-grid .team-item").on("click", function (event, biosLength) {
+    $(".team-grid .team-item button.team-item-btn-inner").on("click", function (event, biosLength) {
+        event.preventDefault();
+        //  let currentBioSlide = $(".team-item").index(this);
+        let currentBioSlide = $(this).closest(".team-item").index();
+        // if (parseInt(currentBioSlide) == 0) {
+        // } else if (parseInt(currentBioSlide) == parseInt(biosLength - 1)) {
+        // }
+        $("#bios-slick-pop").slick("slickGoTo", parseInt(currentBioSlide), true);
+        $("#bios-modal").modal("show");
+    });
+    $("#bios-modal").on("shown.bs.modal", function (e) {
+        $("#bios-slick-pop").slick("setPosition");
+        $(".wrap-modal-slider").addClass("open");
+    });
+    $("#bios-modal").on("hidden.bs.modal", function () {
+        $(".wrap-modal-slider").removeClass("open");
+    });
+    $("#bios-slick-pop").on(
+        "afterChange",
+        function (event, slick, currentSlide, nextSlide) {
+       //     let biosLength = $("#bios-grid").find(".team-item").length;
+
+            if (parseInt(currentSlide) == 0) {
+                $("button.slick-prev.slick-arrow").addClass("none");
+            } else if (parseInt(currentSlide) == parseInt(biosLength - 1)) {
+                $("button.slick-next.slick-arrow").addClass("none");
+            } else {
+                $("button.slick-arrow").removeClass("none");
+            }
+        }
+    );
+// -------- End of Related members modal
+
+
+
+
+    let $homeSlider = $('#tech-home-slider');
+
+    if ($homeSlider.length > 0) {
+        $('#tech-home-slider').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            speed: 600,
+            easing: 'swing',
+            arrows: true,
+            infinite: true,
+            autoplay: true,
+            lazyLoad: 'ondemand',
+            fade: true,
+            autoplaySpeed: 4000,
+            pauseOnHover: true,
+            dots: false,
+            responsive: [
+                {
+                    breakpoint: 991,
+                    settings: {
+                        arrows: false,
+                    }
+                },
+
+            ],
+            rtl: isRTL
+        });
+    }
+});
+
+/* alumni search */
+
+/*
+ * Filtering and pagination run on the server: the page ships with the first 20
+ * cards already rendered, and every other page is fetched over AJAX. The whole
+ * list used to sit in the DOM while the browser hid all but 20 of it.
+ */
+(function ($) {
+
+    var request = null;
+
+    function alumniConfig() {
+        return window.techAlumni || {};
+    }
+
+    function activeFilters() {
+        return $('.alumni-search-filters li').map(function () {
+            return {
+                type: $(this).data('type'),
+                value: String($(this).data('value'))
+            };
+        }).get();
+    }
+
+    function showLoader($wrapper) {
+        if (!$.fn.LoadingOverlay) {
+            return;
+        }
+
+        $wrapper.LoadingOverlay('show', {
+            imageColor: '#3878AC',
+            background: 'rgba(255, 255, 255, 0.6)',
+            size: 60,
+            minSize: 60,
+            maxSize: 60
+        });
+    }
+
+    function hideLoader($wrapper) {
+        if ($.fn.LoadingOverlay) {
+            $wrapper.LoadingOverlay('hide');
+        }
+    }
+
+    function renderPagination(pages, page) {
+        var html = '';
+        var i;
+
+        if (pages > 1) {
+            for (i = 1; i <= pages; i++) {
+                html += '<li class="page-item' + (i === page ? ' active' : '') + '">'
+                    + '<a class="page-link" href="#" data-page="' + i + '">' + i + '</a>'
+                    + '</li>';
+            }
+        }
+
+        $('.pagination').html(html);
+    }
+
+    function loadAlumni(page) {
+        var config = alumniConfig();
+        var $wrapper = $('#phone-book-wrapper');
+        var xhr;
+
+        if (!config.ajaxurl || !$wrapper.length) {
+            return;
+        }
+
+        // A newer request wins: drop whatever is still in flight.
+        if (request) {
+            request.abort();
+        }
+
+        showLoader($wrapper);
+
+        xhr = $.post(config.ajaxurl, {
+            action: 'tech_alumni_load_page',
+            security: config.security,
+            lang: config.lang,
+            page: page,
+            filters: activeFilters()
+        });
+
+        request = xhr;
+
+        xhr.done(function (response) {
+            if (!response || !response.success) {
+                return;
+            }
+
+            $wrapper.html(response.data.html);
+            renderPagination(response.data.pages, response.data.page);
+            $('.alumni-count').text(response.data.total);
+        });
+
+        xhr.always(function () {
+            if (request === xhr) {
+                request = null;
+                hideLoader($wrapper);
+            }
+        });
+    }
+
+    function goToPage(page) {
+        var $anchor = $('#phone-book-filters');
+
+        loadAlumni(page);
+
+        if ($anchor.length) {
+            $('html, body').animate({ scrollTop: $anchor.offset().top - 100 }, 200);
+        }
+    }
+
+    // Kept on window: the markup and the rest of the theme call these by name.
+    window.filterAlumni = function () {
+        loadAlumni(1);
+    };
+
+    window.paginateAlumni = function (page) {
+        goToPage(page);
+    };
+
+    $(document).ready(function () {
+        if (!$('#search-alumni-type').length) {
+            return;
+        }
+
+        $('#search-alumni-type').change(function () {
+            $('#search-alumni-text').hide();
+            $('#search-alumni-year').hide();
+            $('#search-alumni-lab').hide();
+            $('#search-alumni-area').hide();
+            $('#search-alumni-supervisor').hide();
+            $('#search-alumni-faculty').hide();
+            $('#search-alumni-' + $('#search-alumni-type').val()).show();
+        }).trigger('change');
+
+        function addFilter() {
+            var type = $('#search-alumni-type').val();
+            var typeText = $('#search-alumni-type option:selected').text();
+            var val = $('#search-alumni-' + type).val();
+            var text = type == 'text'
+                ? val
+                : $('#search-alumni-' + type).find('option:selected').text();
+
+            // 'faculty' with an empty value is valid: it means every faculty member.
+            if (val == '' && type != 'faculty') {
+                alert('please input value');
+                return;
+            }
+
+            // Built through the DOM, so quotes in a supervisor name cannot break the markup.
+            $('<li></li>')
+                .attr('data-type', type)
+                .attr('data-value', val)
+                .append($('<span></span>').text(typeText + ': ' + text))
+                .append($('<button type="button" title="remove filter"></button>').html('&times;'))
+                .appendTo('.alumni-search-filters');
+
+            filterAlumni();
+        }
+
+        $('#search-alumni-btn').click(addFilter);
+
+        /*
+         * Enter used to submit the form and reload the page, which silently wiped
+         * every filter the visitor had added. Now it does the same as the + button.
+         */
+        $('#archive-search-input').on('submit', function (e) {
+            e.preventDefault();
+            addFilter();
+        });
+
+        $('.alumni-search-filters').on('click', 'button', function () {
+            $(this).parents('li').remove();
+            filterAlumni();
+        });
+
+        $('.pagination').on('click', 'a', function (e) {
+            e.preventDefault();
+            goToPage(parseInt($(this).data('page'), 10) || 1);
+        });
+
+        // No request on load: the template already rendered page 1.
+    });
+
+})(jQuery);

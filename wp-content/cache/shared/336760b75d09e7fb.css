@@ -1,0 +1,1090 @@
+
+img.alignnone.wp-image-21729.size-large {
+    display: none;
+}
+
+/* free listner temporery  */
+.input-hidden {
+	visibility: hidden
+}
+
+
+/* .checkbox-cont general to add for all checkboxes */
+.checkbox-cont .nf-field .listcheckbox-wrap .nf-field-element>ul>li:before{
+	display:none;
+	color:red !important;
+	background-color:red !important;
+}
+/* radio inputs remove list icons */
+
+.list-radio-wrap>.nf-field-element>ul>li:before  {
+	display:none;
+}
+
+/*  GLOBAL */
+
+.back-up a{
+	transition: background-color 0.3s, color 0.3s, box-shadow 1s;
+	box-shadow: -2px 3px 3px 1px grey;
+	text-decoration:none;
+	 display:flex;
+	padding:10px;
+	align-items:center;
+/* 		height:50px; */
+/* 	  width:50px; */
+	color:white !important;
+	background-color:#3878AC;
+	position:fixed;
+	bottom:20px;
+	left:20px;
+	z-index:100;	
+}
+
+.back-up a:hover{
+	 display:flex;
+	box-shadow: 2px -3px 3px 1px grey;
+	padding:10px;
+	align-items:center;
+/* 		height:50px; */
+/* 	  width:50px; */
+	color:#3878AC !important;
+	background-color:white;
+	position:fixed;
+	bottom:20px;
+	left:20px;
+	z-index:100;	
+}
+
+.register-button a{
+	transition:background-color 0.3s,color 0.3s;
+	text-decoration:none;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	height:60px;
+	border-radius:4px;
+	background-color: #3878AC;
+	color:white !important;
+	text-align:center;
+}
+
+.register-button:hover a{
+	text-decoration:none;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	border-radius:4px;
+	border:1px solid #3878AC;
+	background-color: white;
+	color:#3878AC !important;
+	text-align:center;
+}
+
+.register-button p a   {
+	color:white !important;
+}
+
+
+/* homepage change */
+
+#home-sidenav .side-menu-title {
+	
+	display:flex !important;
+	
+}
+
+/* removal of masking on the slider */
+.home-slide-wrapper.slider-has-content:after {
+	display:none;
+}
+
+.home-wrap {
+	margin-top:25px;
+}
+
+.home-wrap:before {
+	background:inherit;
+	
+}
+
+/* home page banner */
+#tech-home-slider {
+	display:none;
+}
+
+#tech-home-slider>div>div>div:after {
+	content: "";
+}
+
+/* #tech-home-slider>div>div>div>div {
+	position:absolute;
+/* 	top:55%; */
+	bottom:0;
+	left:20%;
+	right:10%;
+	margin:auto;
+} */
+
+#tech-home-slider>div>div>div>div>a:before {
+	content:"להרשמה, ";
+	 font-size:32px;
+/* 	color:#2d354d !important; */
+/*  	background-color:blue !important;  */
+} 
+
+ #tech-home-slider>div>div>div>div>a {
+	font-size:18px;
+	 
+/* 	color:#2d354d !important; */
+/*  	background-color:blue !important;  */
+} 
+
+/* ------------- */
+.research-area-arch-excerpt-mod ul>li, .research-area-arch-excerpt-mod ol>li {
+    font-weight: 300;
+}
+body, body * {
+   font-weight: 300;
+}
+table.tablecss{
+	border: 1px solid #ccc;
+}
+table.tablecss thead{
+	border: 1px solid #ccc;
+}
+table.tablecss thead tr th{
+	border:1px solid #ccc;
+	color:#000;
+	font-size: 16px;
+	font-weight: bold !important;
+	padding: 0.5rem 1rem;
+}
+table.tablecss tbody tr td{
+	border:1px solid #ccc;
+	padding: 0.5rem 1rem;
+}
+body.page-id-36538 .landing-content-wrap{
+	min-height:auto;
+	height:auto;
+}
+body.page-template-page-landing form #nf-field-449-container{
+	margin-right:0;
+	margin-left: 12px;
+}
+body.page-template-page-landing form .listradio-wrap .nf-field-element label::after,
+body.page-template-page-landing form .listradio-wrap .nf-field-element label::before,
+/* body.page-template-page-landing form ul > li::before{
+	display:none !important;
+} */
+form ul > li::after{
+	display:inline !important;
+}
+
+body.page-template-page-landing form  .list-radio-wrap .nf-field-element li input {
+  float: right !important;
+  margin-left: 15px;
+}
+body.page-template-page-landing form #nf-field-453-container {
+  width: 100% !important;
+}
+body.page-template-page-landing form .nf-form-content label {
+  font-size: 14px;
+}
+
+.reverse-table {
+	direction: rtl;
+}
+
+/* שינוי לטופס בקשת סמינר(יתכן וישפיע על עוד מקומות באתר יש לבדוק ) */
+.nf-field-element>div::after {
+	position:absolute;
+	right:96% !important;
+}
+
+/* must varify other parts of the site  */
+/* html {
+	scroll-behavior: smooth;
+} */
+
+/* International Ph.D. Excellence Program PAGE */
+
+.apply-now-body a{
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	background-color:#f8f8f8;
+	height:90px;
+	
+}
+
+.apply-now-body:hover a{
+	text-decoration:none;
+	color:white;
+	background-color:#3878ac;
+	transition:background-color 0.5s, color 0.6s;
+	box-shadow: 0 1px 10px 1px black;
+	border-radius:6px;
+}
+
+.menu-links a{
+	display:flex;
+	color:#3878ac;
+	text-decoration:none;
+	justify-content:center;
+	align-items:center;
+	font-size:18px;
+	background-color:#f8f8f8;
+	height:90px;
+}
+
+.menu-links:hover a{
+	color:white;
+	background-color:#3878ac;
+	transition:background-color 0.5s;
+}
+
+/* international excellence program */
+/* https://ece.technion.ac.il/wp-admin/customize.php?url=https%3A%2F%2Fece.technion.ac.il%2Finternational-ph-d-excellence-program-2%2F */
+
+#nf-field-489 {
+	margin-left:15px;
+}
+
+#nf-field-503 {
+	margin-left:15px;
+}
+
+/* international registration form */
+/* https://ece.technion.ac.il/international-ph-d-excellence-program-2/ */
+
+.page-id-37610>#page>#primary>.landing-content-wrap>.entry-header>.site-branding>a:first-child {
+	display:none;
+}
+
+.page-id-37610>#page>#primary>.landing-content-wrap>.entry-header>.site-branding {
+	display:flex;
+	justify-content: flex-end;
+}
+
+/* https://ece.technion.ac.il/wp-admin/customize.php?url=https%3A%2F%2Fece.technion.ac.il%2F%25d7%25a9%25d7%2590%25d7%259c%25d7%2595%25d7%259f-%25d7%259e%25d7%25a9%25d7%2595%25d7%2591-%25d7%259e%25d7%25a4%25d7%2592%25d7%25a9-%25d7%2597%25d7%25a9%25d7%259e%25d7%259c-%25d7%25a4%25d7%2599%25d7%2596%25d7%2599%25d7%25a7%25d7%2594%2F%3Flang%3Dhe */
+
+#nf-field-536-container {
+	
+}
+.archive-item-link {
+	max-height: 380px;align-content
+}
+
+/* https://ece.technion.ac.il/degree-studies-programs/graduate-studies/?lang=he */
+#all-block_da9f826ed2c28ea4dbd13a65c532fe71 {
+	margin-bottom:2%;
+}
+#all-block_da9f826ed2c28ea4dbd13a65c532fe71>div {
+	padding:0px !important;
+}
+#all-block_da9f826ed2c28ea4dbd13a65c532fe71>div>a {
+	box-shadow:0 0 10px 0 grey;
+	padding:0px !important;
+}
+
+/* SAME PAGE ENG */
+
+#all-block_2eb887dbd2a14494ea0d62ee786fc207>div>a {
+	box-shadow:0 0 10px 0 grey
+}
+
+
+/* page-ביקורי נוער בפקולטה */
+
+.testimony-container-top {
+	padding:10px;
+	border-radius:8px;
+/* 	background-color:red; */
+	box-shadow:1px 5px 10px grey;
+}
+
+.testimony-container-top>div:last-child {
+	border-right:2px dotted grey
+}
+
+.testimony-container-bottom {
+	padding:10px;
+	border-radius:8px;
+/* 	background-color:red; */
+	box-shadow:1px 5px 10px grey;
+}
+
+.testimony-container-bottom>div:first-child {
+	padding:10px;
+	border-left:2px dotted grey
+}
+
+.school-slider-wrapper{
+
+	position:relative;
+	height:50px;
+	overflow:hidden
+}
+.school-slider {
+	font-size:1.5rem !important;
+	position:absolute;
+	overflow:hidden;
+	white-space: nowrap;
+	animation-name:slide-in;
+	animation-timing-function:linear;
+	animation-duration:60s;
+	animation-iteration-count:infinite;
+}
+.side-text{
+	line-height:1.1em !important;
+}
+.top-contact-button-link>a{
+	text-decoration:none;
+	background-color:red;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	padding:5px;
+	background-color:#f8f8f8;
+}
+.top-contact-button-link>a:hover {
+	color:white;
+	background-color:#3878ac;
+	transition:background-color 0.5s, color 0.6s;
+}
+
+.contact-button-link{
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	padding:5px;
+	background-color:#f8f8f8;
+
+	margin-top:5px;
+}
+.contact-button-link:hover {
+	text-decoration:none;
+	color:white;
+	background-color:#3878ac;
+	transition:background-color 0.5s, color 0.6s;
+}
+
+@keyframes slide-in {
+	0% {right:100%}
+	100% {right: -640%}
+}
+
+@media only screen and (max-width: 800px) {
+	.testimony-container-top>div:last-child {
+	padding-top:20px;
+	border-right:0px dotted grey;
+	border-top:3px dotted grey;
+}
+	.testimony-container-bottom>div:first-child {
+	padding:10px;
+	border-left:0px dotted grey;
+	border-bottom:3px dotted grey;
+}
+	
+	.side-image-rotation1 {
+		transform:rotate(0deg)
+	}
+	.side-image-rotation2 {
+		transform:rotate(0deg)
+	}
+	.side-image-rotation3 {
+		transform:rotate(0deg)
+	}
+	
+	.block-col>div {
+		 display:flex;
+		 flex-direction:column-reverse;
+	}
+	.middle-block-col {
+		display:flex;
+		 flex-direction:column-reverse;
+	}
+}
+
+.arch-item-date{
+	letter-spacing: 0.1rem;
+}
+
+/* https://ece.technion.ac.il/%d7%a1%d7%a7%d7%a8-%d7%a1%d7%98%d7%95%d7%93%d7%a0%d7%98%d7%99%d7%9d/?lang=he 
+ * 
+ * סקר סטודנטים */
+
+
+.hidden-form-input {
+	opacity:0;
+	color: #66baff;
+	margin-right:15px;
+	margin-left:30px;
+/* 	background-color:#f3f3f3; */
+	padding-right: 15px;
+	border-top:1px solid ;
+	border-right:1px solid ;
+	border-bottom:1px solid ;
+	border-image: linear-gradient( to left, #8d8d8d , #ffffff00, #ffffff00 ) 30 /1/5;
+	animation-name: fade-in;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+}
+
+@keyframes fade-in {
+  0% { opacity:0; translate: 1000px}
+  100% {opacity:1; translate: 0px}
+}
+
+
+.checkbox-display-fix>div>div>div>ul>li:before {
+	display:none;
+}
+
+/* עמוד לעובדים חדשים */
+
+.important-contacts {
+	padding:5px;
+/* 	background-color:red; */
+	border:1px solid grey;
+	border-radius:6px;
+	min-height:110px;
+	box-shadow: 1px 1px 3px 1px grey;
+}
+
+.map-iframe {
+	width:100%;
+	height:500px;
+	border:0px;
+	margin-bottom:20px;
+}
+
+.important-contacts-low {
+	padding:5px;
+	border-top:1px solid grey;
+}
+
+/* רשימת קורסים תארים ראשונים */
+
+.courses-qa {
+	display:none;
+	text-align:center;
+}
+
+.courses-qa>ul>li>button:before {
+	display:none;
+	text-align:center;
+}
+
+.courses-qa>ul>li>button:after {
+	background-color:white;
+	border-radius:100%;
+	padding:7px
+}
+
+.courses-qa {
+	padding:20px;
+}
+
+.courses-qa>ul>li>div>div>div:before {
+	display:none
+}
+
+.courses-qa>ul>li>div>div>div p:nth-child(even) {
+	font-size:24px;
+	color:#3878AC;
+}
+
+.courses-qa>ul>li>button {
+	text-align:center;
+	background-color:#3878AC;
+	color:whitesmoke;
+}
+
+/* טופס גמר לימודים */
+
+#nf-field-455-wrap>div>ul>li>label:after{
+	
+	margin-left:500px;
+}
+
+#nf-field-455-wrap>div>ul>li>label:before{
+	
+	margin-left:500px;
+}
+
+#nf-field-615-wrap>div>ul>li>label {
+	margin-right:35px;
+}
+
+#nf-field-615-wrap>div>ul>li>label:before {
+	margin-left:500px;
+}
+
+#nf-field-615-wrap>div>ul>li>label:after {
+	margin-left:500px;
+}
+
+/* עמוד משרות */
+
+.entry-title {
+	color:#3878AC;
+}
+
+.awsm-job-form-inner {
+	display:none
+}
+
+.awsm-job-item .awsm-job-post-title>a {
+	font-family:Heebo, sans-serif;
+/* 	font-weight: 300 !important; */
+	letter-spacing:unset;
+}
+
+.type-awsm_job_openings {
+	direction:auto;
+	text-align:start;
+	margin:20px;
+}
+
+.entry-content {
+	padding:20px
+}
+
+.single-awsm_job_openings .cpt-widget {
+	display:none;
+}
+
+.single-awsm_job_openings .nav-links {
+	display:flex;
+	padding:5px;
+	padding-top:0px;
+	direction:ltr;
+}
+
+.single-awsm_job_openings .nav-links a:hover {
+	display:inline-block;
+	background-color:#508cab;
+	color: white !important;
+	padding:5px;
+	padding-top:0px;
+}
+
+.single-awsm_job_openings .nav-links a{
+	display:inline-block;
+	background-color:#15638c;
+	padding:5px;
+	border-radius:8px;
+	padding-top:0px;
+	border:1px solid white;
+	text-decoration: none;
+}
+
+.single-awsm_job_openings .nav-links a:link{
+	display:inline-block;
+	color:white;
+	padding:5px;
+	border-radius:8px;
+	padding-top:0px;
+	border:1px solid white;
+}
+
+.single-awsm_job_openings .nav-links a:visited{
+	display:inline-block;
+	color:white;
+	padding:5px;
+	border-radius:8px;
+	padding-top:0px;
+	border:1px solid white;
+}
+
+.back-to-main {
+	display:inline-block;
+	background-color:#15638c;
+	padding:5px;
+	border-radius:8px;
+	padding-top:0px;
+	border:1px solid white;
+}
+
+.back-to-main:hover a {
+	background-color:white;
+	color:#29A9DD !important;
+}
+
+.back-to-main:hover  {
+	background-color:white;
+	color:#29A9DD !important;
+
+}
+
+.back-to-main>a {
+	color:white !important;
+	text-decoration:none;
+}
+
+
+/* שלבי גמר */
+
+#accordion-block_d862e74cc747c73f6dbaf6206dda2b2b>ul>li>button:before {
+	display:none;
+}
+
+#accordion-block_d862e74cc747c73f6dbaf6206dda2b2b>ul>li>div>div>div:before {
+	display:none;
+}
+
+/* פרוייקטים מחקריים */
+
+
+
+.research-projects-qa>.faq-list>li>button:before{
+	display:none;	
+}
+
+.research-projects-qa>.faq-list>li>button{
+	text-align:center;
+	background-color:#3878AC10;	
+	border:1px solid  #84848596;
+	box-shadow: 0px 0px 3px 0px #84848596;
+	margin-bottom:10px;
+	border-radius:4px !important;
+}
+
+.research-projects-qa>.faq-list>li>button:hover{
+	color:whitesmoke !important;
+	background-color:#3878AC !important;	
+}
+
+.research-projects-qa>.faq-list>li>div>div>div.card-body{
+	direction:ltr;
+	text-align:end !important;
+
+}
+
+.research-projects-qa>.faq-list>li>div>div>div:before{
+	display:none;	
+}
+
+.research-projects-qa>.faq-list>li{
+	
+		padding-right:0 !important;
+	
+}
+
+
+/* podcasts */
+
+.podcast-box {
+	padding:10px;
+	border-radius:30px;
+	border-top-right-radius:0px;
+	border-bottom-left-radius:0px;
+	border:1px solid #84848596;
+	display:flex;
+	flex-wrap:wrap;
+	
+}
+
+.custom-audio>audio {
+	min-width: 0px !important;
+}
+
+.podcast-detail {
+	display:flex;
+	flex-wrap:wrap;
+
+}
+
+/* EMET index Program page*/
+.button-container {
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items:center;
+}
+
+.button-container>ul {
+	margin-top: 10px;
+}
+
+
+.testimonys {
+	position: relative;
+	width: 100%;
+	height: 220px;
+	overflow: hidden;
+	}
+
+.testimony {
+	position: absolute;
+	top: 0;
+	right: 100%;
+
+	margin-right:50px;
+	display: flex !important;
+	align-items: center;
+	gap: 2rem;
+
+	width: 100%;
+	height: 200px;
+
+	white-space: normal;
+	animation: slide-in-testimony 10s linear infinite;
+}
+
+/* needs to be added if a testimony added */
+.testimony:nth-child(1) {
+	animation-delay: 0s;
+}
+
+.testimony:nth-child(2) {
+	animation-delay:20s;
+}
+
+.testimony > .wp-block-column:first-child {
+	flex: 0 0 33.33% !important;
+}
+
+.testimony > .wp-block-column:last-child {
+	flex: 1 1 66.66% !important;
+	min-width: 0;
+}
+
+.testimony-pic {
+	margin: 0;
+	
+}
+
+.testimony-pic img {
+	display: block;
+	width: 100%;
+	height: 215px;
+	object-fit: cover;
+	border-radius:100%;
+}
+
+.testimony-text {
+	display: block;
+	margin: 0;
+	white-space: normal;
+	overflow-wrap: break-word;
+	line-height: 1.5;
+}
+
+@keyframes slide-in-testimony {
+	0% {
+		right: -100%;
+	}
+
+	45% {
+		right: 0;
+	}
+
+	55% {
+		right: 0;
+	}
+
+	100% {
+		right: 100%;
+	}
+}
+
+/* dean's HEB */
+
+.deans-qa>.faq-list>li>button:before{
+	display:none;	
+}
+
+.deans-qa>.faq-list>li>div>div>div:before{
+	display:none;	
+}
+
+.deans-qa>.faq-list>li>button{
+	
+	align-items:center;
+	text-align:right;
+	background-color:#3878AC10;	
+	border:1px solid  #84848596;
+	box-shadow: 0px 0px 3px 0px #84848596;
+	margin-bottom:10px;
+	border-radius:4px !important;
+}
+
+.deans-qa>.faq-list>li>button:after{
+	display:block;
+	width:15px;
+	height:15px;
+	border-radius:50px;
+/* 	padding-right:0px; */
+	background-color:#3878AC10;	
+	border-right:1px solid  #84848596;
+	box-shadow: 0px 0px 3px 0px #84848596;
+	margin-bottom:10px;
+/* 	border-radius:4px !important; */
+}
+
+
+.qa-right-side {
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:flex-end;
+	width:90%;
+	direction:ltr;
+}
+
+.card-body-wrapper {
+	display:flex;
+	flex-direction:row;
+	
+}
+
+.qa-left-side {
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	
+	padding:20px;
+	position:relative;
+
+	height:100px;
+	border-right:1px solid #d5d5d5;
+/* 	background-color:red; */
+}
+.qa-left-side>img {
+	object-fit:cover;
+	object-position:center;
+	border-radius:100%;
+	width:100px;
+	height:100px;
+	
+/* 	border-radius:100; */
+}
+
+
+/* שאלון סטודנטים ובוגרים  */
+.horizontal-radio-btn .nf-field-element>ul{
+	display:flex !important;
+	gap: 20px;
+}
+
+.horizontal-radio-btn .nf-field-element>ul>li {
+	background-color:#F3F3F3;
+	border-radius: 5px;
+}
+
+.horizontal-radio-btn .nf-field-element>ul>li>label{
+	order:0 !important;
+	margin:10px;
+	padding-left: 10px;
+}
+
+.program-label>.nf-field>div>div>label {
+	text-align:right;
+}
+
+#post-34501 {
+	direction:ltr !important;
+}
+
+
+/* שאלון אתרים חברי סגל */
+
+.survey-radio-element>div>div
+{
+	justify-content:flex-end;
+	display:flex !important;
+
+}
+.survey-radio-element>div>div>div
+{
+	justify-content:flex-end;
+	display:flex !important;
+
+}
+
+.survey-radio-element>div>div>div>ul {
+	display:flex !important;
+}
+
+.survey-radio-element>div>div>div>ul>li {
+	display:flex !important;
+}
+
+/* test  */
+
+.test-card>div {
+	display:flex;
+}
+
+.test-card>div>div {
+	display:flex;
+	width:100px !important;
+	border:1px solid #ebebeb;
+	border-radius:10px;
+	padding:1px !important;
+}
+
+.back-to-research>a {
+	cursor: pointer;
+	display:inline-flex;
+	align-items:center;
+	justify-content:center;
+	border-radius:6px;
+	color: whitesmoke !important;
+	background-color: #3582c4;
+	padding:5px;
+	border:1px solid #275c87;
+	text-decoration:none;
+	font-weight:300;
+	transition: background-color 0.3s , color 0.3s;
+}
+
+.back-to-research>a:hover {
+	cursor: pointer;
+	display:inline-flex;
+	align-items:center;
+	justify-content:center;
+	border-radius:6px;
+	color: black !important;
+	background-color: #d9eeff;
+	padding:5px;
+	border:1px solid #275c87;
+	text-decoration:none;
+	transition: background-color 0.3s , color 0.3s;
+}
+
+.shop-head {
+	background:linear-gradient(to bottom, #95b1c7, whitesmoke);
+
+}
+
+.news-articals>div>a>div>img { 
+max-height:200px
+}
+
+/* media page styling containers */
+.media-container {
+	max-height:700px;
+	overflow-y: scroll;
+/* 	padding: 10px; */
+	border-radius:7px;
+/* 	margin: 30px; */
+	margin: 5px;
+	transition: all 0.5s ease-in-out;
+	box-shadow: 0 0 4px 1px #d9d9d9;
+}
+
+.media-container:hover {
+	max-height:700px;
+	overflow-y: scroll;
+/* 	padding: 10px; */
+	border-radius:7px;
+	
+	background:#0146660f;
+	transform:scale(1.02);
+	transition: all 0.5s ease-in-out;
+	box-shadow: 0 0 4px 1px #d9d9d9;
+}
+
+.media-button>a {
+	display:inline-flex;
+	justify-items: center;
+	justify-content: center;
+	width: 100%;
+/* 	border: 1px solid gray; */
+	padding-bottom:10px;
+	padding-top:10px;
+	border-radius: 5px;
+/* 	color:white !important; */
+/* 	background: #39849a; */
+	box-shadow: 0 0 4px 1px #d9d9d9;
+
+}
+
+/* ------------------------------------------------------------------- MEDIA SCREEN ------------------------------------------------ */
+
+@media screen and (max-width:860px){
+	
+/* 	Podcasts */
+	
+.podcast-detail {
+	display:flex;
+	flex-direction:column;
+	flex-wrap:wrap;
+
+}
+	
+.podcast-box {
+	padding:10px;
+	border-radius:0px;
+	border-top-right-radius:0px;
+	border-bottom-left-radius:0px;
+	border:1px solid #84848596;
+	display:flex;
+	flex-wrap:wrap;
+	
+}
+	
+
+	
+/* חברות השותפות במועדון	 */
+	.executive  {
+		display:flex;
+		flex-direction:column;
+		align-items:center;
+		flex-shrink:0;
+		justify-content:center;
+	}
+	.executive .logo-gallery-item  {
+		width:100%;
+	}
+	
+	.Partners  {
+		display:flex;
+		flex-direction:column;
+		align-items:center;
+		flex-shrink:0;
+		justify-content:center;
+	}
+	.Partners .logo-gallery-item  {
+		width:100%;
+	}
+	
+/* 	Deans Page */
+	.qa-left-side>img {
+	object-fit:cover;
+	object-position:center;
+	border-radius:100%;
+
+	
+/* 	border-radius:100; */
+}
+	.qa-left-side {
+	justify-content:center;
+		height:100%;
+	border-right:0px solid #d5d5d5;
+	border-bottom:1px solid #d5d5d5;
+  }
+	
+.deans-card-body-wrapper {
+	display:flex;
+	flex-direction:column !important;
+}
+/* 	--- END --- */
+	.phonebook-btn > div.sm-name{
+		font-weight: 600;
+	}
+	.phonebook-btn > div:nth-child(5){
+		display:block!important;
+		margin-top:10px;
+	}
+	
+	.home-news-img>img {
+		min-height: 250px;
+	}
+}//end media max-width 860px
+
+

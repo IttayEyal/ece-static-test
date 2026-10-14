@@ -1,0 +1,601 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Technical Reports Archive - Faculty of Electrical And Computer Engineering - Technion</title>
+	<atom:link href="https://ece.technion.ac.il/technical-reports/feed/" rel="self" type="application/rss+xml" />
+	<link>https://ece.technion.ac.il/technical-reports/</link>
+	<description>Faculty of Electrical And Computer Engineering</description>
+	<lastBuildDate>Mon, 03 Jul 2023 10:04:24 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=7.0.2</generator>
+
+<image>
+	<url>https://ece.technion.ac.il/wp-content/uploads/2021/03/cropped-tech-logo-en-32x32.webp</url>
+	<title>Technical Reports Archive - Faculty of Electrical And Computer Engineering - Technion</title>
+	<link>https://ece.technion.ac.il/technical-reports/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Anomaly Preserving l_2,inf –Optimal Dimensionality Reduction over a Grassmann Manifold</title>
+		<link>https://ece.technion.ac.il/technical-reports/anomaly-preserving-ell_2inftyaeoptimal-dimensionality-reduction-over-a-grassmann-manifold-2/</link>
+					<comments>https://ece.technion.ac.il/technical-reports/anomaly-preserving-ell_2inftyaeoptimal-dimensionality-reduction-over-a-grassmann-manifold-2/#respond</comments>
+		
+		<dc:creator><![CDATA[WMG Support]]></dc:creator>
+		<pubDate>Tue, 19 Jan 2021 09:38:23 +0000</pubDate>
+				<guid isPermaLink="false">https://ece.web3dev.technion.ac.il/technical-reports/anomaly-preserving-ell_2inftyaeoptimal-dimensionality-reduction-over-a-grassmann-manifold-2/</guid>
+
+					<description><![CDATA[<p>The post <a href="https://ece.technion.ac.il/technical-reports/anomaly-preserving-ell_2inftyaeoptimal-dimensionality-reduction-over-a-grassmann-manifold-2/">Anomaly Preserving l_2,inf –Optimal Dimensionality Reduction over a Grassmann Manifold</a> appeared first on <a href="https://ece.technion.ac.il">Faculty of Electrical And Computer Engineering</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[<p>The post <a href="https://ece.technion.ac.il/technical-reports/anomaly-preserving-ell_2inftyaeoptimal-dimensionality-reduction-over-a-grassmann-manifold-2/">Anomaly Preserving l_2,inf –Optimal Dimensionality Reduction over a Grassmann Manifold</a> appeared first on <a href="https://ece.technion.ac.il">Faculty of Electrical And Computer Engineering</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://ece.technion.ac.il/technical-reports/anomaly-preserving-ell_2inftyaeoptimal-dimensionality-reduction-over-a-grassmann-manifold-2/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Distributed Bonsai Merkle Tree</title>
+		<link>https://ece.technion.ac.il/technical-reports/distributed-bonsai-merkle-tree/</link>
+					<comments>https://ece.technion.ac.il/technical-reports/distributed-bonsai-merkle-tree/#respond</comments>
+		
+		<dc:creator><![CDATA[WMG Support]]></dc:creator>
+		<pubDate>Tue, 19 Jan 2021 09:38:23 +0000</pubDate>
+				<guid isPermaLink="false">https://ece.web3dev.technion.ac.il/technical-reports/distributed-bonsai-merkle-tree/</guid>
+
+					<description><![CDATA[<p>The post <a href="https://ece.technion.ac.il/technical-reports/distributed-bonsai-merkle-tree/">Distributed Bonsai Merkle Tree</a> appeared first on <a href="https://ece.technion.ac.il">Faculty of Electrical And Computer Engineering</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[<p>The post <a href="https://ece.technion.ac.il/technical-reports/distributed-bonsai-merkle-tree/">Distributed Bonsai Merkle Tree</a> appeared first on <a href="https://ece.technion.ac.il">Faculty of Electrical And Computer Engineering</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://ece.technion.ac.il/technical-reports/distributed-bonsai-merkle-tree/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Error Exponents of Typical Random Codes</title>
+		<link>https://ece.technion.ac.il/technical-reports/error-exponents-of-typical-random-codes/</link>
+					<comments>https://ece.technion.ac.il/technical-reports/error-exponents-of-typical-random-codes/#respond</comments>
+		
+		<dc:creator><![CDATA[WMG Support]]></dc:creator>
+		<pubDate>Tue, 19 Jan 2021 09:38:23 +0000</pubDate>
+				<guid isPermaLink="false">https://ece.web3dev.technion.ac.il/technical-reports/error-exponents-of-typical-random-codes/</guid>
+
+					<description><![CDATA[<p>The post <a href="https://ece.technion.ac.il/technical-reports/error-exponents-of-typical-random-codes/">Error Exponents of Typical Random Codes</a> appeared first on <a href="https://ece.technion.ac.il">Faculty of Electrical And Computer Engineering</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[<p>The post <a href="https://ece.technion.ac.il/technical-reports/error-exponents-of-typical-random-codes/">Error Exponents of Typical Random Codes</a> appeared first on <a href="https://ece.technion.ac.il">Faculty of Electrical And Computer Engineering</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://ece.technion.ac.il/technical-reports/error-exponents-of-typical-random-codes/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Ensemble Performance of Biometric Authentication Systems Based on Secret Key Generation</title>
+		<link>https://ece.technion.ac.il/technical-reports/ensemble-performance-of-biometric-authentication-systems-based-on-secret-key-generation/</link>
+					<comments>https://ece.technion.ac.il/technical-reports/ensemble-performance-of-biometric-authentication-systems-based-on-secret-key-generation/#respond</comments>
+		
+		<dc:creator><![CDATA[WMG Support]]></dc:creator>
+		<pubDate>Tue, 19 Jan 2021 09:38:23 +0000</pubDate>
+				<guid isPermaLink="false">https://ece.web3dev.technion.ac.il/technical-reports/ensemble-performance-of-biometric-authentication-systems-based-on-secret-key-generation/</guid>
+
+					<description><![CDATA[<p>The post <a href="https://ece.technion.ac.il/technical-reports/ensemble-performance-of-biometric-authentication-systems-based-on-secret-key-generation/">Ensemble Performance of Biometric Authentication Systems Based on Secret Key Generation</a> appeared first on <a href="https://ece.technion.ac.il">Faculty of Electrical And Computer Engineering</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[<p>The post <a href="https://ece.technion.ac.il/technical-reports/ensemble-performance-of-biometric-authentication-systems-based-on-secret-key-generation/">Ensemble Performance of Biometric Authentication Systems Based on Secret Key Generation</a> appeared first on <a href="https://ece.technion.ac.il">Faculty of Electrical And Computer Engineering</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://ece.technion.ac.il/technical-reports/ensemble-performance-of-biometric-authentication-systems-based-on-secret-key-generation/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Gaussian Intersymbol Interference Channels With Mismatch</title>
+		<link>https://ece.technion.ac.il/technical-reports/gaussian-intersymbol-interference-channels-with-mismatch/</link>
+					<comments>https://ece.technion.ac.il/technical-reports/gaussian-intersymbol-interference-channels-with-mismatch/#respond</comments>
+		
+		<dc:creator><![CDATA[WMG Support]]></dc:creator>
+		<pubDate>Tue, 19 Jan 2021 09:38:23 +0000</pubDate>
+				<guid isPermaLink="false">https://ece.web3dev.technion.ac.il/technical-reports/gaussian-intersymbol-interference-channels-with-mismatch/</guid>
+
+					<description><![CDATA[<p>The post <a href="https://ece.technion.ac.il/technical-reports/gaussian-intersymbol-interference-channels-with-mismatch/">Gaussian Intersymbol Interference Channels With Mismatch</a> appeared first on <a href="https://ece.technion.ac.il">Faculty of Electrical And Computer Engineering</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[<p>The post <a href="https://ece.technion.ac.il/technical-reports/gaussian-intersymbol-interference-channels-with-mismatch/">Gaussian Intersymbol Interference Channels With Mismatch</a> appeared first on <a href="https://ece.technion.ac.il">Faculty of Electrical And Computer Engineering</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://ece.technion.ac.il/technical-reports/gaussian-intersymbol-interference-channels-with-mismatch/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Lower Bounds on Exponential Moments of the Quadratic Error in Parameter Estimation</title>
+		<link>https://ece.technion.ac.il/technical-reports/lower-bounds-on-exponential-moments-of-the-quadratic-error-in-parameter-estimation/</link>
+					<comments>https://ece.technion.ac.il/technical-reports/lower-bounds-on-exponential-moments-of-the-quadratic-error-in-parameter-estimation/#respond</comments>
+		
+		<dc:creator><![CDATA[WMG Support]]></dc:creator>
+		<pubDate>Tue, 19 Jan 2021 09:38:23 +0000</pubDate>
+				<guid isPermaLink="false">https://ece.web3dev.technion.ac.il/technical-reports/lower-bounds-on-exponential-moments-of-the-quadratic-error-in-parameter-estimation/</guid>
+
+					<description><![CDATA[<p>The post <a href="https://ece.technion.ac.il/technical-reports/lower-bounds-on-exponential-moments-of-the-quadratic-error-in-parameter-estimation/">Lower Bounds on Exponential Moments of the Quadratic Error in Parameter Estimation</a> appeared first on <a href="https://ece.technion.ac.il">Faculty of Electrical And Computer Engineering</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[<p>The post <a href="https://ece.technion.ac.il/technical-reports/lower-bounds-on-exponential-moments-of-the-quadratic-error-in-parameter-estimation/">Lower Bounds on Exponential Moments of the Quadratic Error in Parameter Estimation</a> appeared first on <a href="https://ece.technion.ac.il">Faculty of Electrical And Computer Engineering</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://ece.technion.ac.il/technical-reports/lower-bounds-on-exponential-moments-of-the-quadratic-error-in-parameter-estimation/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Exact Random Coding Exponents and Universal Decoders for the Asymmetric Broadcast Channel</title>
+		<link>https://ece.technion.ac.il/technical-reports/exact-random-coding-exponents-and-universal-decoders-for-the-asymmetric-broadcast-channel/</link>
+					<comments>https://ece.technion.ac.il/technical-reports/exact-random-coding-exponents-and-universal-decoders-for-the-asymmetric-broadcast-channel/#respond</comments>
+		
+		<dc:creator><![CDATA[WMG Support]]></dc:creator>
+		<pubDate>Tue, 19 Jan 2021 09:38:23 +0000</pubDate>
+				<guid isPermaLink="false">https://ece.web3dev.technion.ac.il/technical-reports/exact-random-coding-exponents-and-universal-decoders-for-the-asymmetric-broadcast-channel/</guid>
+
+					<description><![CDATA[<p>The post <a href="https://ece.technion.ac.il/technical-reports/exact-random-coding-exponents-and-universal-decoders-for-the-asymmetric-broadcast-channel/">Exact Random Coding Exponents and Universal Decoders for the Asymmetric Broadcast Channel</a> appeared first on <a href="https://ece.technion.ac.il">Faculty of Electrical And Computer Engineering</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[<p>The post <a href="https://ece.technion.ac.il/technical-reports/exact-random-coding-exponents-and-universal-decoders-for-the-asymmetric-broadcast-channel/">Exact Random Coding Exponents and Universal Decoders for the Asymmetric Broadcast Channel</a> appeared first on <a href="https://ece.technion.ac.il">Faculty of Electrical And Computer Engineering</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://ece.technion.ac.il/technical-reports/exact-random-coding-exponents-and-universal-decoders-for-the-asymmetric-broadcast-channel/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Latency Optimized Mapping of Logic Functions for Memristor Aided Logic (MAGIC)</title>
+		<link>https://ece.technion.ac.il/technical-reports/latency-optimized-mapping-of-logic-functions-for-memristor-aided-logic-magic/</link>
+					<comments>https://ece.technion.ac.il/technical-reports/latency-optimized-mapping-of-logic-functions-for-memristor-aided-logic-magic/#respond</comments>
+		
+		<dc:creator><![CDATA[WMG Support]]></dc:creator>
+		<pubDate>Tue, 19 Jan 2021 09:38:23 +0000</pubDate>
+				<guid isPermaLink="false">https://ece.web3dev.technion.ac.il/technical-reports/latency-optimized-mapping-of-logic-functions-for-memristor-aided-logic-magic/</guid>
+
+					<description><![CDATA[<p>The post <a href="https://ece.technion.ac.il/technical-reports/latency-optimized-mapping-of-logic-functions-for-memristor-aided-logic-magic/">Latency Optimized Mapping of Logic Functions for Memristor Aided Logic (MAGIC)</a> appeared first on <a href="https://ece.technion.ac.il">Faculty of Electrical And Computer Engineering</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[<p>The post <a href="https://ece.technion.ac.il/technical-reports/latency-optimized-mapping-of-logic-functions-for-memristor-aided-logic-magic/">Latency Optimized Mapping of Logic Functions for Memristor Aided Logic (MAGIC)</a> appeared first on <a href="https://ece.technion.ac.il">Faculty of Electrical And Computer Engineering</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://ece.technion.ac.il/technical-reports/latency-optimized-mapping-of-logic-functions-for-memristor-aided-logic-magic/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>High Numerical Aperture Singular Beam Scanning Microscopy: Preliminary Experimental Results</title>
+		<link>https://ece.technion.ac.il/technical-reports/high-numerical-aperture-singular-beam-scanning-microscopy-preliminary-experimental-results/</link>
+					<comments>https://ece.technion.ac.il/technical-reports/high-numerical-aperture-singular-beam-scanning-microscopy-preliminary-experimental-results/#respond</comments>
+		
+		<dc:creator><![CDATA[WMG Support]]></dc:creator>
+		<pubDate>Tue, 19 Jan 2021 09:38:23 +0000</pubDate>
+				<guid isPermaLink="false">https://ece.web3dev.technion.ac.il/technical-reports/high-numerical-aperture-singular-beam-scanning-microscopy-preliminary-experimental-results/</guid>
+
+					<description><![CDATA[<p>The post <a href="https://ece.technion.ac.il/technical-reports/high-numerical-aperture-singular-beam-scanning-microscopy-preliminary-experimental-results/">High Numerical Aperture Singular Beam Scanning Microscopy: Preliminary Experimental Results</a> appeared first on <a href="https://ece.technion.ac.il">Faculty of Electrical And Computer Engineering</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[<p>The post <a href="https://ece.technion.ac.il/technical-reports/high-numerical-aperture-singular-beam-scanning-microscopy-preliminary-experimental-results/">High Numerical Aperture Singular Beam Scanning Microscopy: Preliminary Experimental Results</a> appeared first on <a href="https://ece.technion.ac.il">Faculty of Electrical And Computer Engineering</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://ece.technion.ac.il/technical-reports/high-numerical-aperture-singular-beam-scanning-microscopy-preliminary-experimental-results/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Achievable Rates with Imperfect Transmitter Side Information Using a Broadcast Transmission Strategy</title>
+		<link>https://ece.technion.ac.il/technical-reports/achievable-rates-with-imperfect-transmitter-side-information-using-a-broadcast-transmission-strategy/</link>
+					<comments>https://ece.technion.ac.il/technical-reports/achievable-rates-with-imperfect-transmitter-side-information-using-a-broadcast-transmission-strategy/#respond</comments>
+		
+		<dc:creator><![CDATA[WMG Support]]></dc:creator>
+		<pubDate>Tue, 19 Jan 2021 09:38:23 +0000</pubDate>
+				<guid isPermaLink="false">https://ece.web3dev.technion.ac.il/technical-reports/achievable-rates-with-imperfect-transmitter-side-information-using-a-broadcast-transmission-strategy/</guid>
+
+					<description><![CDATA[<p>The post <a href="https://ece.technion.ac.il/technical-reports/achievable-rates-with-imperfect-transmitter-side-information-using-a-broadcast-transmission-strategy/">Achievable Rates with Imperfect Transmitter Side Information Using a Broadcast Transmission Strategy</a> appeared first on <a href="https://ece.technion.ac.il">Faculty of Electrical And Computer Engineering</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[<p>The post <a href="https://ece.technion.ac.il/technical-reports/achievable-rates-with-imperfect-transmitter-side-information-using-a-broadcast-transmission-strategy/">Achievable Rates with Imperfect Transmitter Side Information Using a Broadcast Transmission Strategy</a> appeared first on <a href="https://ece.technion.ac.il">Faculty of Electrical And Computer Engineering</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://ece.technion.ac.il/technical-reports/achievable-rates-with-imperfect-transmitter-side-information-using-a-broadcast-transmission-strategy/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>On a probabilistic approach to rate control for optimal color image compression and video transmission</title>
+		<link>https://ece.technion.ac.il/technical-reports/on-a-probabilistic-approach-to-rate-control-for-optimal-color-image-compression-and-video-transmission/</link>
+					<comments>https://ece.technion.ac.il/technical-reports/on-a-probabilistic-approach-to-rate-control-for-optimal-color-image-compression-and-video-transmission/#respond</comments>
+		
+		<dc:creator><![CDATA[WMG Support]]></dc:creator>
+		<pubDate>Tue, 19 Jan 2021 09:38:23 +0000</pubDate>
+				<guid isPermaLink="false">https://ece.web3dev.technion.ac.il/technical-reports/on-a-probabilistic-approach-to-rate-control-for-optimal-color-image-compression-and-video-transmission/</guid>
+
+					<description><![CDATA[<p>The post <a href="https://ece.technion.ac.il/technical-reports/on-a-probabilistic-approach-to-rate-control-for-optimal-color-image-compression-and-video-transmission/">On a probabilistic approach to rate control for optimal color image compression and video transmission</a> appeared first on <a href="https://ece.technion.ac.il">Faculty of Electrical And Computer Engineering</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[<p>The post <a href="https://ece.technion.ac.il/technical-reports/on-a-probabilistic-approach-to-rate-control-for-optimal-color-image-compression-and-video-transmission/">On a probabilistic approach to rate control for optimal color image compression and video transmission</a> appeared first on <a href="https://ece.technion.ac.il">Faculty of Electrical And Computer Engineering</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://ece.technion.ac.il/technical-reports/on-a-probabilistic-approach-to-rate-control-for-optimal-color-image-compression-and-video-transmission/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Relations Between Random Coding Exponents and the Statistical Physics of Random Codes</title>
+		<link>https://ece.technion.ac.il/technical-reports/relations-between-random-coding-exponents-and-the-statistical-physics-of-random-codes/</link>
+					<comments>https://ece.technion.ac.il/technical-reports/relations-between-random-coding-exponents-and-the-statistical-physics-of-random-codes/#respond</comments>
+		
+		<dc:creator><![CDATA[WMG Support]]></dc:creator>
+		<pubDate>Tue, 19 Jan 2021 09:38:23 +0000</pubDate>
+				<guid isPermaLink="false">https://ece.web3dev.technion.ac.il/technical-reports/relations-between-random-coding-exponents-and-the-statistical-physics-of-random-codes/</guid>
+
+					<description><![CDATA[<p>The post <a href="https://ece.technion.ac.il/technical-reports/relations-between-random-coding-exponents-and-the-statistical-physics-of-random-codes/">Relations Between Random Coding Exponents and the Statistical Physics of Random Codes</a> appeared first on <a href="https://ece.technion.ac.il">Faculty of Electrical And Computer Engineering</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[<p>The post <a href="https://ece.technion.ac.il/technical-reports/relations-between-random-coding-exponents-and-the-statistical-physics-of-random-codes/">Relations Between Random Coding Exponents and the Statistical Physics of Random Codes</a> appeared first on <a href="https://ece.technion.ac.il">Faculty of Electrical And Computer Engineering</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://ece.technion.ac.il/technical-reports/relations-between-random-coding-exponents-and-the-statistical-physics-of-random-codes/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>On the Threshold Effect in the Estimation of Chaotic Sequences</title>
+		<link>https://ece.technion.ac.il/technical-reports/on-the-threshold-effect-in-the-estimation-of-chaotic-sequences/</link>
+					<comments>https://ece.technion.ac.il/technical-reports/on-the-threshold-effect-in-the-estimation-of-chaotic-sequences/#respond</comments>
+		
+		<dc:creator><![CDATA[WMG Support]]></dc:creator>
+		<pubDate>Tue, 19 Jan 2021 09:38:12 +0000</pubDate>
+				<guid isPermaLink="false">https://ece.web3dev.technion.ac.il/technical-reports/on-the-threshold-effect-in-the-estimation-of-chaotic-sequences/</guid>
+
+					<description><![CDATA[<p>The post <a href="https://ece.technion.ac.il/technical-reports/on-the-threshold-effect-in-the-estimation-of-chaotic-sequences/">On the Threshold Effect in the Estimation of Chaotic Sequences</a> appeared first on <a href="https://ece.technion.ac.il">Faculty of Electrical And Computer Engineering</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[<p>The post <a href="https://ece.technion.ac.il/technical-reports/on-the-threshold-effect-in-the-estimation-of-chaotic-sequences/">On the Threshold Effect in the Estimation of Chaotic Sequences</a> appeared first on <a href="https://ece.technion.ac.il">Faculty of Electrical And Computer Engineering</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://ece.technion.ac.il/technical-reports/on-the-threshold-effect-in-the-estimation-of-chaotic-sequences/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Bluetooth Time Division Duplex &#8211; Exact Analysis as a Polling System</title>
+		<link>https://ece.technion.ac.il/technical-reports/bluetooth-time-division-duplex-exact-analysis-as-a-polling-system/</link>
+					<comments>https://ece.technion.ac.il/technical-reports/bluetooth-time-division-duplex-exact-analysis-as-a-polling-system/#respond</comments>
+		
+		<dc:creator><![CDATA[WMG Support]]></dc:creator>
+		<pubDate>Tue, 19 Jan 2021 09:38:12 +0000</pubDate>
+				<guid isPermaLink="false">https://ece.web3dev.technion.ac.il/technical-reports/bluetooth-time-division-duplex-exact-analysis-as-a-polling-system/</guid>
+
+					<description><![CDATA[<p>The post <a href="https://ece.technion.ac.il/technical-reports/bluetooth-time-division-duplex-exact-analysis-as-a-polling-system/">Bluetooth Time Division Duplex &#8211; Exact Analysis as a Polling System</a> appeared first on <a href="https://ece.technion.ac.il">Faculty of Electrical And Computer Engineering</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[<p>The post <a href="https://ece.technion.ac.il/technical-reports/bluetooth-time-division-duplex-exact-analysis-as-a-polling-system/">Bluetooth Time Division Duplex &#8211; Exact Analysis as a Polling System</a> appeared first on <a href="https://ece.technion.ac.il">Faculty of Electrical And Computer Engineering</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://ece.technion.ac.il/technical-reports/bluetooth-time-division-duplex-exact-analysis-as-a-polling-system/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>In-kernel Integration of Operating-System and Infiniband Primitives for High-Performance Computing Clusters: a DSM Example</title>
+		<link>https://ece.technion.ac.il/technical-reports/in-kernel-integration-of-operating-system-and-infiniband-primitives-for-high-performance-computing-clusters-a-dsm-example/</link>
+					<comments>https://ece.technion.ac.il/technical-reports/in-kernel-integration-of-operating-system-and-infiniband-primitives-for-high-performance-computing-clusters-a-dsm-example/#respond</comments>
+		
+		<dc:creator><![CDATA[WMG Support]]></dc:creator>
+		<pubDate>Tue, 19 Jan 2021 09:38:12 +0000</pubDate>
+				<guid isPermaLink="false">https://ece.web3dev.technion.ac.il/technical-reports/in-kernel-integration-of-operating-system-and-infiniband-primitives-for-high-performance-computing-clusters-a-dsm-example/</guid>
+
+					<description><![CDATA[<p>The post <a href="https://ece.technion.ac.il/technical-reports/in-kernel-integration-of-operating-system-and-infiniband-primitives-for-high-performance-computing-clusters-a-dsm-example/">In-kernel Integration of Operating-System and Infiniband Primitives for High-Performance Computing Clusters: a DSM Example</a> appeared first on <a href="https://ece.technion.ac.il">Faculty of Electrical And Computer Engineering</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[<p>The post <a href="https://ece.technion.ac.il/technical-reports/in-kernel-integration-of-operating-system-and-infiniband-primitives-for-high-performance-computing-clusters-a-dsm-example/">In-kernel Integration of Operating-System and Infiniband Primitives for High-Performance Computing Clusters: a DSM Example</a> appeared first on <a href="https://ece.technion.ac.il">Faculty of Electrical And Computer Engineering</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://ece.technion.ac.il/technical-reports/in-kernel-integration-of-operating-system-and-infiniband-primitives-for-high-performance-computing-clusters-a-dsm-example/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Network Classless Time Protocol Based on Clock Offset Optimization</title>
+		<link>https://ece.technion.ac.il/technical-reports/network-classless-time-protocol-based-on-clock-offset-optimization/</link>
+					<comments>https://ece.technion.ac.il/technical-reports/network-classless-time-protocol-based-on-clock-offset-optimization/#respond</comments>
+		
+		<dc:creator><![CDATA[WMG Support]]></dc:creator>
+		<pubDate>Tue, 19 Jan 2021 09:38:12 +0000</pubDate>
+				<guid isPermaLink="false">https://ece.web3dev.technion.ac.il/technical-reports/network-classless-time-protocol-based-on-clock-offset-optimization/</guid>
+
+					<description><![CDATA[<p>The post <a href="https://ece.technion.ac.il/technical-reports/network-classless-time-protocol-based-on-clock-offset-optimization/">Network Classless Time Protocol Based on Clock Offset Optimization</a> appeared first on <a href="https://ece.technion.ac.il">Faculty of Electrical And Computer Engineering</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[<p>The post <a href="https://ece.technion.ac.il/technical-reports/network-classless-time-protocol-based-on-clock-offset-optimization/">Network Classless Time Protocol Based on Clock Offset Optimization</a> appeared first on <a href="https://ece.technion.ac.il">Faculty of Electrical And Computer Engineering</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://ece.technion.ac.il/technical-reports/network-classless-time-protocol-based-on-clock-offset-optimization/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Maximum Entropy Based One-way Delay Estimation</title>
+		<link>https://ece.technion.ac.il/technical-reports/maximum-entropy-based-one-way-delay-estimation/</link>
+					<comments>https://ece.technion.ac.il/technical-reports/maximum-entropy-based-one-way-delay-estimation/#respond</comments>
+		
+		<dc:creator><![CDATA[WMG Support]]></dc:creator>
+		<pubDate>Tue, 19 Jan 2021 09:38:12 +0000</pubDate>
+				<guid isPermaLink="false">https://ece.web3dev.technion.ac.il/technical-reports/maximum-entropy-based-one-way-delay-estimation/</guid>
+
+					<description><![CDATA[<p>The post <a href="https://ece.technion.ac.il/technical-reports/maximum-entropy-based-one-way-delay-estimation/">Maximum Entropy Based One-way Delay Estimation</a> appeared first on <a href="https://ece.technion.ac.il">Faculty of Electrical And Computer Engineering</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[<p>The post <a href="https://ece.technion.ac.il/technical-reports/maximum-entropy-based-one-way-delay-estimation/">Maximum Entropy Based One-way Delay Estimation</a> appeared first on <a href="https://ece.technion.ac.il">Faculty of Electrical And Computer Engineering</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://ece.technion.ac.il/technical-reports/maximum-entropy-based-one-way-delay-estimation/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Optimizing Hybrid Multicast and Unicast Overlay Networks</title>
+		<link>https://ece.technion.ac.il/technical-reports/optimizing-hybrid-multicast-and-unicast-overlay-networks/</link>
+					<comments>https://ece.technion.ac.il/technical-reports/optimizing-hybrid-multicast-and-unicast-overlay-networks/#respond</comments>
+		
+		<dc:creator><![CDATA[WMG Support]]></dc:creator>
+		<pubDate>Tue, 19 Jan 2021 09:38:12 +0000</pubDate>
+				<guid isPermaLink="false">https://ece.web3dev.technion.ac.il/technical-reports/optimizing-hybrid-multicast-and-unicast-overlay-networks/</guid>
+
+					<description><![CDATA[<p>The post <a href="https://ece.technion.ac.il/technical-reports/optimizing-hybrid-multicast-and-unicast-overlay-networks/">Optimizing Hybrid Multicast and Unicast Overlay Networks</a> appeared first on <a href="https://ece.technion.ac.il">Faculty of Electrical And Computer Engineering</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[<p>The post <a href="https://ece.technion.ac.il/technical-reports/optimizing-hybrid-multicast-and-unicast-overlay-networks/">Optimizing Hybrid Multicast and Unicast Overlay Networks</a> appeared first on <a href="https://ece.technion.ac.il">Faculty of Electrical And Computer Engineering</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://ece.technion.ac.il/technical-reports/optimizing-hybrid-multicast-and-unicast-overlay-networks/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>A Hardware Signaling Paradigm for Fine-grained Resource Reservation</title>
+		<link>https://ece.technion.ac.il/technical-reports/a-hardware-signaling-paradigm-for-fine-grained-resource-reservation/</link>
+					<comments>https://ece.technion.ac.il/technical-reports/a-hardware-signaling-paradigm-for-fine-grained-resource-reservation/#respond</comments>
+		
+		<dc:creator><![CDATA[WMG Support]]></dc:creator>
+		<pubDate>Tue, 19 Jan 2021 09:38:12 +0000</pubDate>
+				<guid isPermaLink="false">https://ece.web3dev.technion.ac.il/technical-reports/a-hardware-signaling-paradigm-for-fine-grained-resource-reservation/</guid>
+
+					<description><![CDATA[<p>The post <a href="https://ece.technion.ac.il/technical-reports/a-hardware-signaling-paradigm-for-fine-grained-resource-reservation/">A Hardware Signaling Paradigm for Fine-grained Resource Reservation</a> appeared first on <a href="https://ece.technion.ac.il">Faculty of Electrical And Computer Engineering</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[<p>The post <a href="https://ece.technion.ac.il/technical-reports/a-hardware-signaling-paradigm-for-fine-grained-resource-reservation/">A Hardware Signaling Paradigm for Fine-grained Resource Reservation</a> appeared first on <a href="https://ece.technion.ac.il">Faculty of Electrical And Computer Engineering</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://ece.technion.ac.il/technical-reports/a-hardware-signaling-paradigm-for-fine-grained-resource-reservation/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Efficient Algorithms for Computing Disjoint QoS Paths</title>
+		<link>https://ece.technion.ac.il/technical-reports/efficient-algorithms-for-computing-disjoint-qos-paths/</link>
+					<comments>https://ece.technion.ac.il/technical-reports/efficient-algorithms-for-computing-disjoint-qos-paths/#respond</comments>
+		
+		<dc:creator><![CDATA[WMG Support]]></dc:creator>
+		<pubDate>Tue, 19 Jan 2021 09:38:12 +0000</pubDate>
+				<guid isPermaLink="false">https://ece.web3dev.technion.ac.il/technical-reports/efficient-algorithms-for-computing-disjoint-qos-paths/</guid>
+
+					<description><![CDATA[<p>The post <a href="https://ece.technion.ac.il/technical-reports/efficient-algorithms-for-computing-disjoint-qos-paths/">Efficient Algorithms for Computing Disjoint QoS Paths</a> appeared first on <a href="https://ece.technion.ac.il">Faculty of Electrical And Computer Engineering</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[<p>The post <a href="https://ece.technion.ac.il/technical-reports/efficient-algorithms-for-computing-disjoint-qos-paths/">Efficient Algorithms for Computing Disjoint QoS Paths</a> appeared first on <a href="https://ece.technion.ac.il">Faculty of Electrical And Computer Engineering</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://ece.technion.ac.il/technical-reports/efficient-algorithms-for-computing-disjoint-qos-paths/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Linear Minimax Regret Estimation with Bounded Data Uncertainties</title>
+		<link>https://ece.technion.ac.il/technical-reports/linear-minimax-regret-estimation-with-bounded-data-uncertainties/</link>
+					<comments>https://ece.technion.ac.il/technical-reports/linear-minimax-regret-estimation-with-bounded-data-uncertainties/#respond</comments>
+		
+		<dc:creator><![CDATA[WMG Support]]></dc:creator>
+		<pubDate>Tue, 19 Jan 2021 09:38:12 +0000</pubDate>
+				<guid isPermaLink="false">https://ece.web3dev.technion.ac.il/technical-reports/linear-minimax-regret-estimation-with-bounded-data-uncertainties/</guid>
+
+					<description><![CDATA[<p>The post <a href="https://ece.technion.ac.il/technical-reports/linear-minimax-regret-estimation-with-bounded-data-uncertainties/">Linear Minimax Regret Estimation with Bounded Data Uncertainties</a> appeared first on <a href="https://ece.technion.ac.il">Faculty of Electrical And Computer Engineering</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[<p>The post <a href="https://ece.technion.ac.il/technical-reports/linear-minimax-regret-estimation-with-bounded-data-uncertainties/">Linear Minimax Regret Estimation with Bounded Data Uncertainties</a> appeared first on <a href="https://ece.technion.ac.il">Faculty of Electrical And Computer Engineering</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://ece.technion.ac.il/technical-reports/linear-minimax-regret-estimation-with-bounded-data-uncertainties/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Metamaterial Slabs Coupling</title>
+		<link>https://ece.technion.ac.il/technical-reports/metamaterial-slabs-coupling/</link>
+					<comments>https://ece.technion.ac.il/technical-reports/metamaterial-slabs-coupling/#respond</comments>
+		
+		<dc:creator><![CDATA[WMG Support]]></dc:creator>
+		<pubDate>Tue, 19 Jan 2021 09:38:12 +0000</pubDate>
+				<guid isPermaLink="false">https://ece.web3dev.technion.ac.il/technical-reports/metamaterial-slabs-coupling/</guid>
+
+					<description><![CDATA[<p>The post <a href="https://ece.technion.ac.il/technical-reports/metamaterial-slabs-coupling/">Metamaterial Slabs Coupling</a> appeared first on <a href="https://ece.technion.ac.il">Faculty of Electrical And Computer Engineering</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[<p>The post <a href="https://ece.technion.ac.il/technical-reports/metamaterial-slabs-coupling/">Metamaterial Slabs Coupling</a> appeared first on <a href="https://ece.technion.ac.il">Faculty of Electrical And Computer Engineering</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://ece.technion.ac.il/technical-reports/metamaterial-slabs-coupling/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Minimum Variance in Biased Estimation: Bounds and Asymptotically Optimal Estimators</title>
+		<link>https://ece.technion.ac.il/technical-reports/minimum-variance-in-biased-estimation-bounds-and-asymptotically-optimal-estimators/</link>
+					<comments>https://ece.technion.ac.il/technical-reports/minimum-variance-in-biased-estimation-bounds-and-asymptotically-optimal-estimators/#respond</comments>
+		
+		<dc:creator><![CDATA[WMG Support]]></dc:creator>
+		<pubDate>Tue, 19 Jan 2021 09:38:12 +0000</pubDate>
+				<guid isPermaLink="false">https://ece.web3dev.technion.ac.il/technical-reports/minimum-variance-in-biased-estimation-bounds-and-asymptotically-optimal-estimators/</guid>
+
+					<description><![CDATA[<p>The post <a href="https://ece.technion.ac.il/technical-reports/minimum-variance-in-biased-estimation-bounds-and-asymptotically-optimal-estimators/">Minimum Variance in Biased Estimation: Bounds and Asymptotically Optimal Estimators</a> appeared first on <a href="https://ece.technion.ac.il">Faculty of Electrical And Computer Engineering</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[<p>The post <a href="https://ece.technion.ac.il/technical-reports/minimum-variance-in-biased-estimation-bounds-and-asymptotically-optimal-estimators/">Minimum Variance in Biased Estimation: Bounds and Asymptotically Optimal Estimators</a> appeared first on <a href="https://ece.technion.ac.il">Faculty of Electrical And Computer Engineering</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://ece.technion.ac.il/technical-reports/minimum-variance-in-biased-estimation-bounds-and-asymptotically-optimal-estimators/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Wave Propagation in Metamaterial Multi-Layered Structures</title>
+		<link>https://ece.technion.ac.il/technical-reports/wave-propagation-in-metamaterial-multi-layered-structures/</link>
+					<comments>https://ece.technion.ac.il/technical-reports/wave-propagation-in-metamaterial-multi-layered-structures/#respond</comments>
+		
+		<dc:creator><![CDATA[WMG Support]]></dc:creator>
+		<pubDate>Tue, 19 Jan 2021 09:38:12 +0000</pubDate>
+				<guid isPermaLink="false">https://ece.web3dev.technion.ac.il/technical-reports/wave-propagation-in-metamaterial-multi-layered-structures/</guid>
+
+					<description><![CDATA[<p>The post <a href="https://ece.technion.ac.il/technical-reports/wave-propagation-in-metamaterial-multi-layered-structures/">Wave Propagation in Metamaterial Multi-Layered Structures</a> appeared first on <a href="https://ece.technion.ac.il">Faculty of Electrical And Computer Engineering</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[<p>The post <a href="https://ece.technion.ac.il/technical-reports/wave-propagation-in-metamaterial-multi-layered-structures/">Wave Propagation in Metamaterial Multi-Layered Structures</a> appeared first on <a href="https://ece.technion.ac.il">Faculty of Electrical And Computer Engineering</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://ece.technion.ac.il/technical-reports/wave-propagation-in-metamaterial-multi-layered-structures/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Treelike Parallel Server Stations in Heavy Traffic</title>
+		<link>https://ece.technion.ac.il/technical-reports/treelike-parallel-server-stations-in-heavy-traffic/</link>
+					<comments>https://ece.technion.ac.il/technical-reports/treelike-parallel-server-stations-in-heavy-traffic/#respond</comments>
+		
+		<dc:creator><![CDATA[WMG Support]]></dc:creator>
+		<pubDate>Tue, 19 Jan 2021 09:38:12 +0000</pubDate>
+				<guid isPermaLink="false">https://ece.web3dev.technion.ac.il/technical-reports/treelike-parallel-server-stations-in-heavy-traffic/</guid>
+
+					<description><![CDATA[<p>The post <a href="https://ece.technion.ac.il/technical-reports/treelike-parallel-server-stations-in-heavy-traffic/">Treelike Parallel Server Stations in Heavy Traffic</a> appeared first on <a href="https://ece.technion.ac.il">Faculty of Electrical And Computer Engineering</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[<p>The post <a href="https://ece.technion.ac.il/technical-reports/treelike-parallel-server-stations-in-heavy-traffic/">Treelike Parallel Server Stations in Heavy Traffic</a> appeared first on <a href="https://ece.technion.ac.il">Faculty of Electrical And Computer Engineering</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://ece.technion.ac.il/technical-reports/treelike-parallel-server-stations-in-heavy-traffic/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Wave propagation along a rectangular metallic wave-guide longitudinally loaded with a metamaterial slab</title>
+		<link>https://ece.technion.ac.il/technical-reports/wave-propagation-along-a-rectangular-metallic-wave-guide-longitudinally-loaded-with-a-metamaterial-slab/</link>
+					<comments>https://ece.technion.ac.il/technical-reports/wave-propagation-along-a-rectangular-metallic-wave-guide-longitudinally-loaded-with-a-metamaterial-slab/#respond</comments>
+		
+		<dc:creator><![CDATA[WMG Support]]></dc:creator>
+		<pubDate>Tue, 19 Jan 2021 09:38:12 +0000</pubDate>
+				<guid isPermaLink="false">https://ece.web3dev.technion.ac.il/technical-reports/wave-propagation-along-a-rectangular-metallic-wave-guide-longitudinally-loaded-with-a-metamaterial-slab/</guid>
+
+					<description><![CDATA[<p>The post <a href="https://ece.technion.ac.il/technical-reports/wave-propagation-along-a-rectangular-metallic-wave-guide-longitudinally-loaded-with-a-metamaterial-slab/">Wave propagation along a rectangular metallic wave-guide longitudinally loaded with a metamaterial slab</a> appeared first on <a href="https://ece.technion.ac.il">Faculty of Electrical And Computer Engineering</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[<p>The post <a href="https://ece.technion.ac.il/technical-reports/wave-propagation-along-a-rectangular-metallic-wave-guide-longitudinally-loaded-with-a-metamaterial-slab/">Wave propagation along a rectangular metallic wave-guide longitudinally loaded with a metamaterial slab</a> appeared first on <a href="https://ece.technion.ac.il">Faculty of Electrical And Computer Engineering</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://ece.technion.ac.il/technical-reports/wave-propagation-along-a-rectangular-metallic-wave-guide-longitudinally-loaded-with-a-metamaterial-slab/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Exposing and Eliminating Vulnerabilities to Denial of Service Attacks in Secure Gossip-Based Multicast</title>
+		<link>https://ece.technion.ac.il/technical-reports/exposing-and-eliminating-vulnerabilities-to-denial-of-service-attacks-in-secure-gossip-based-multicast/</link>
+					<comments>https://ece.technion.ac.il/technical-reports/exposing-and-eliminating-vulnerabilities-to-denial-of-service-attacks-in-secure-gossip-based-multicast/#respond</comments>
+		
+		<dc:creator><![CDATA[WMG Support]]></dc:creator>
+		<pubDate>Tue, 19 Jan 2021 09:38:12 +0000</pubDate>
+				<guid isPermaLink="false">https://ece.web3dev.technion.ac.il/technical-reports/exposing-and-eliminating-vulnerabilities-to-denial-of-service-attacks-in-secure-gossip-based-multicast/</guid>
+
+					<description><![CDATA[<p>The post <a href="https://ece.technion.ac.il/technical-reports/exposing-and-eliminating-vulnerabilities-to-denial-of-service-attacks-in-secure-gossip-based-multicast/">Exposing and Eliminating Vulnerabilities to Denial of Service Attacks in Secure Gossip-Based Multicast</a> appeared first on <a href="https://ece.technion.ac.il">Faculty of Electrical And Computer Engineering</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[<p>The post <a href="https://ece.technion.ac.il/technical-reports/exposing-and-eliminating-vulnerabilities-to-denial-of-service-attacks-in-secure-gossip-based-multicast/">Exposing and Eliminating Vulnerabilities to Denial of Service Attacks in Secure Gossip-Based Multicast</a> appeared first on <a href="https://ece.technion.ac.il">Faculty of Electrical And Computer Engineering</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://ece.technion.ac.il/technical-reports/exposing-and-eliminating-vulnerabilities-to-denial-of-service-attacks-in-secure-gossip-based-multicast/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Spectral Efficiency of Joint Multiple Cell-Site Processors for Randomly Spread DS-CDMA Systems</title>
+		<link>https://ece.technion.ac.il/technical-reports/spectral-efficiency-of-joint-multiple-cell-site-processors-for-randomly-spread-ds-cdma-systems/</link>
+					<comments>https://ece.technion.ac.il/technical-reports/spectral-efficiency-of-joint-multiple-cell-site-processors-for-randomly-spread-ds-cdma-systems/#respond</comments>
+		
+		<dc:creator><![CDATA[WMG Support]]></dc:creator>
+		<pubDate>Tue, 19 Jan 2021 09:38:12 +0000</pubDate>
+				<guid isPermaLink="false">https://ece.web3dev.technion.ac.il/technical-reports/spectral-efficiency-of-joint-multiple-cell-site-processors-for-randomly-spread-ds-cdma-systems/</guid>
+
+					<description><![CDATA[<p>The post <a href="https://ece.technion.ac.il/technical-reports/spectral-efficiency-of-joint-multiple-cell-site-processors-for-randomly-spread-ds-cdma-systems/">Spectral Efficiency of Joint Multiple Cell-Site Processors for Randomly Spread DS-CDMA Systems</a> appeared first on <a href="https://ece.technion.ac.il">Faculty of Electrical And Computer Engineering</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[<p>The post <a href="https://ece.technion.ac.il/technical-reports/spectral-efficiency-of-joint-multiple-cell-site-processors-for-randomly-spread-ds-cdma-systems/">Spectral Efficiency of Joint Multiple Cell-Site Processors for Randomly Spread DS-CDMA Systems</a> appeared first on <a href="https://ece.technion.ac.il">Faculty of Electrical And Computer Engineering</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://ece.technion.ac.il/technical-reports/spectral-efficiency-of-joint-multiple-cell-site-processors-for-randomly-spread-ds-cdma-systems/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>On Achievable Rates and Complexity of LDPC Codes for Parallel Channels with Application to Puncturing</title>
+		<link>https://ece.technion.ac.il/technical-reports/on-achievable-rates-and-complexity-of-ldpc-codes-for-parallel-channels-with-application-to-puncturing/</link>
+					<comments>https://ece.technion.ac.il/technical-reports/on-achievable-rates-and-complexity-of-ldpc-codes-for-parallel-channels-with-application-to-puncturing/#respond</comments>
+		
+		<dc:creator><![CDATA[WMG Support]]></dc:creator>
+		<pubDate>Tue, 19 Jan 2021 09:38:12 +0000</pubDate>
+				<guid isPermaLink="false">https://ece.web3dev.technion.ac.il/technical-reports/on-achievable-rates-and-complexity-of-ldpc-codes-for-parallel-channels-with-application-to-puncturing/</guid>
+
+					<description><![CDATA[<p>The post <a href="https://ece.technion.ac.il/technical-reports/on-achievable-rates-and-complexity-of-ldpc-codes-for-parallel-channels-with-application-to-puncturing/">On Achievable Rates and Complexity of LDPC Codes for Parallel Channels with Application to Puncturing</a> appeared first on <a href="https://ece.technion.ac.il">Faculty of Electrical And Computer Engineering</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[<p>The post <a href="https://ece.technion.ac.il/technical-reports/on-achievable-rates-and-complexity-of-ldpc-codes-for-parallel-channels-with-application-to-puncturing/">On Achievable Rates and Complexity of LDPC Codes for Parallel Channels with Application to Puncturing</a> appeared first on <a href="https://ece.technion.ac.il">Faculty of Electrical And Computer Engineering</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://ece.technion.ac.il/technical-reports/on-achievable-rates-and-complexity-of-ldpc-codes-for-parallel-channels-with-application-to-puncturing/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Tightened Upper Bounds on the ML Decoding Error Probability of Binary Linear Block Codes</title>
+		<link>https://ece.technion.ac.il/technical-reports/tightened-upper-bounds-on-the-ml-decoding-error-probability-of-binary-linear-block-codes/</link>
+					<comments>https://ece.technion.ac.il/technical-reports/tightened-upper-bounds-on-the-ml-decoding-error-probability-of-binary-linear-block-codes/#respond</comments>
+		
+		<dc:creator><![CDATA[WMG Support]]></dc:creator>
+		<pubDate>Tue, 19 Jan 2021 09:38:12 +0000</pubDate>
+				<guid isPermaLink="false">https://ece.web3dev.technion.ac.il/technical-reports/tightened-upper-bounds-on-the-ml-decoding-error-probability-of-binary-linear-block-codes/</guid>
+
+					<description><![CDATA[<p>The post <a href="https://ece.technion.ac.il/technical-reports/tightened-upper-bounds-on-the-ml-decoding-error-probability-of-binary-linear-block-codes/">Tightened Upper Bounds on the ML Decoding Error Probability of Binary Linear Block Codes</a> appeared first on <a href="https://ece.technion.ac.il">Faculty of Electrical And Computer Engineering</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[<p>The post <a href="https://ece.technion.ac.il/technical-reports/tightened-upper-bounds-on-the-ml-decoding-error-probability-of-binary-linear-block-codes/">Tightened Upper Bounds on the ML Decoding Error Probability of Binary Linear Block Codes</a> appeared first on <a href="https://ece.technion.ac.il">Faculty of Electrical And Computer Engineering</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://ece.technion.ac.il/technical-reports/tightened-upper-bounds-on-the-ml-decoding-error-probability-of-binary-linear-block-codes/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

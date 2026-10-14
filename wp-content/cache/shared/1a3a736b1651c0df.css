@@ -1,0 +1,338 @@
+/* Banner container */
+.w3d-cb-banner {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 730px;
+  width: 95%;
+  background: #ffffff;
+  border: 1px solid #cccccc;
+  border-radius: 8px 8px 0 0;
+  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.15);
+  padding: 20px 24px;
+  z-index: 2147483647;
+  box-sizing: border-box;
+}
+
+.w3d-cb-banner.slide-enter {
+  animation: slideUp 0.4s ease-out;
+}
+
+@keyframes slideUp {
+  from { transform: translateX(-50%) translateY(100%); opacity: 0; }
+  to { transform: translateX(-50%) translateY(0); opacity: 1; }
+}
+
+/* Header */
+.w3d-cb-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.w3d-cb-title-wrap {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  line-height: 1;
+}
+
+.w3d-cb-cookie-icon {
+  width: 1.6em;
+  height: 1.6em;
+  flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  vertical-align: middle;
+}
+
+.w3d-cb-cookie-icon img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: contain;
+}
+
+.w3d-cb-cookie-icon svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.w3d-cb-logo img {
+  max-height: 40px;
+  width: auto;
+}
+
+.w3d-cb-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+  color: #000000;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+h3.w3d-cb-title {
+  font-size: 18px !important;
+  line-height: 1.5 !important;
+}
+
+.w3d-cb-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: transparent;
+  border: none;
+  font-size: unset;
+  cursor: pointer;
+  padding: 0;
+  width: 28px;
+  height: 28px;
+  line-height: 1;
+  color: #666;
+}
+
+.w3d-cb-close:hover {
+  color: #ffffff;
+}
+
+/* Message */
+.w3d-cb-message {
+  margin: 16px 0;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #000000;
+}
+
+.w3d-cb-message a {
+  color: #0073aa;
+  text-decoration: underline;
+}
+
+.w3d-cb-message a:hover {
+  color: #005177;
+}
+
+/* Categories */
+.w3d-cb-categories {
+  margin: 16px 0;
+}
+
+.w3d-cb-category {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.w3d-cb-category:last-child {
+  border-bottom: none;
+}
+
+.w3d-cb-category-label {
+  font-size: 14px;
+  color: #000000;
+}
+
+/* Toggle Switch */
+.w3d-cb-toggle {
+  position: relative;
+  display: inline-block;
+  width: 48px;
+  height: 24px;
+}
+
+.w3d-cb-toggle input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.w3d-cb-slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.3s;
+  border-radius: 24px;
+}
+
+.w3d-cb-slider:before {
+  position: absolute;
+  content: \\\"\\\";
+  height: 18px;
+  width: 18px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  transition: 0.3s;
+  border-radius: 50%;
+}
+
+.w3d-cb-toggle input:checked + .w3d-cb-slider {
+  background-color: #4CAF50;
+}
+
+.w3d-cb-toggle input:checked + .w3d-cb-slider:before {
+  transform: translateX(24px);
+}
+
+/* Buttons */
+#w3d-cb-banner .w3d-cb-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 16px;
+  flex-wrap: wrap;
+}
+
+#w3d-cb-banner .w3d-cb-btn {
+  padding: 10px 20px;
+  border: 2px solid #0073aa;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 0.2s;
+  flex: 1;
+  min-width: 120px;
+}
+
+#w3d-cb-banner .w3d-cb-btn-accept {
+  background: var(--w3d-accept-bg, #0073aa);
+  border-color: var(--w3d-accept-border, #005177);
+  color: var(--w3d-accept-text, #ffffff);
+}
+
+#w3d-cb-banner .w3d-cb-btn-accept:hover {
+  opacity: 0.9;
+}
+
+#w3d-cb-banner .w3d-cb-btn-deny {
+  background: var(--w3d-deny-bg, transparent);
+  border-color: var(--w3d-deny-border, #0073aa);
+  color: var(--w3d-deny-text, #0073aa);
+}
+
+#w3d-cb-banner .w3d-cb-btn-deny:hover {
+  opacity: 0.8;
+}
+
+#w3d-cb-banner .w3d-cb-btn-save {
+  background: #4CAF50;
+  border-color: #4CAF50;
+  color: #ffffff;
+}
+
+#w3d-cb-banner .w3d-cb-btn-save:hover {
+  background: #45a049;
+  border-color: #45a049;
+}
+
+#w3d-cb-banner .w3d-cb-btn-view {
+  background: transparent;
+  color: #666;
+  border-color: #999;
+  font-size: 13px;
+  flex-basis: 100%;
+  margin-top: 4px;
+}
+
+#w3d-cb-banner .w3d-cb-btn-view:hover {
+  background: #f9f9f9;
+}
+
+/* Responsive */
+@media (max-width: 425px) {
+  .w3d-cb-banner {
+    width: 100%;
+    border-radius: 0;
+    padding: 16px;
+  }
+
+  #w3d-cb-banner .w3d-cb-buttons {
+    flex-direction: column;
+  }
+
+  #w3d-cb-banner .w3d-cb-btn {
+    width: 100%;
+  }
+}
+
+/* Color Overrides from Settings */
+:root {
+  --w3d-bg: #ffffff;
+  --w3d-border: #ffffff;
+  --w3d-text: #000000;
+  --w3d-link: #1e73be;
+  --w3d-link-underline: #1e73be;
+  --w3d-toggle-active: #4CAF50;
+  --w3d-toggle-inactive: #ccc;
+  --w3d-accept-bg: #1e73be;
+  --w3d-accept-border: #1e73be;
+  --w3d-accept-text: #ffffff;
+  --w3d-deny-bg: #e5e5e5;
+  --w3d-deny-border: #e5e5e5;
+  --w3d-deny-text: #000000;
+}
+
+.w3d-cb-banner {
+  background: #ffffff !important;
+  border-color: #ffffff !important;
+  color: #000000 !important;
+}
+
+.w3d-cb-title {
+  color: #000000 !important;
+}
+
+.w3d-cb-message {
+  color: #000000 !important;
+}
+
+.w3d-cb-message a {
+  color: #1e73be !important;
+  text-decoration-color: #1e73be !important;
+}
+
+.w3d-cb-message a:hover {
+  color: #1e73be !important;
+  text-decoration-color: #1e73be !important;
+}
+
+.w3d-cb-category-label {
+  color: #000000 !important;
+}
+
+.w3d-cb-slider {
+  background-color: #ccc !important;
+}
+
+.w3d-cb-toggle input:checked + .w3d-cb-slider {
+  background-color: #4CAF50 !important;
+}
+
+.w3d-cb-btn-accept {
+  background: #1e73be !important;
+  border-color: #1e73be !important;
+  color: #ffffff !important;
+}
+
+.w3d-cb-btn-deny {
+  background: #e5e5e5 !important;
+  border-color: #e5e5e5 !important;
+  color: #000000 !important;
+}
